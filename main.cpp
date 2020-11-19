@@ -50,7 +50,7 @@ int main()
 
     // render object
     OBJLoader loader;
-    Mesh mesh = loader.LoadFromFile("res/objs/42.obj");
+    Mesh mesh = loader.LoadFromFile("res/objs/diablo.obj");
 
     unsigned int vao, vbo, tex_vbo, ebo, tex_ebo;
 
@@ -87,6 +87,11 @@ int main()
         Shader shader("res/shaders/vshader.vert", "res/shaders/fshader.frag");
         Texture texture("res/textures/diablo3_pose_diffuse.tga");
 
+        glm::vec3 lightColor(1.0f, 1.0f, 1.0f);
+        glm::vec3 diffuseColor = lightColor * glm::vec3(0.5f);
+
+        glm::vec3 ambientColor = diffuseColor * glm::vec3(0.5f);
+
         glEnable(GL_DEPTH_TEST);
 
         while (!glfwWindowShouldClose(window))
@@ -96,6 +101,20 @@ int main()
             auto currentFrame = static_cast<float>(glfwGetTime());
             deltaTime = currentFrame - lastFrame;
             lastFrame = currentFrame;
+
+            shader.SetVec3("viewPos", camera.Position);
+
+            shader.SetVec3("light.ambient", ambientColor);
+            shader.SetVec3("light.diffuse", diffuseColor);
+            shader.SetVec3("light.specular", glm::vec3(1.0f, 1.0f, 1.0f));
+
+            shader.SetVec3("material.ambient", glm::vec3(1.0f, 1.0f, 1.0f));
+            shader.SetVec3("material.diffuse", glm::vec3(1.0f, 1.0f, 1.0f));
+            shader.SetVec3("material.specular", glm::vec3(0.5f, 0.5f, 0.5f));
+            shader.SetFloat("material.shininess", 32.0f);
+
+            shader.SetVec3("light.position", -5.0f, 0.0f, 0.0f);
+
 
             // pass projection matrix to shader (note that in this case it could change every frame)
             glm::mat4 projection = glm::perspective(glm::radians(camera.Zoom), (float)800 / (float)600, 0.1f, 100.0f);

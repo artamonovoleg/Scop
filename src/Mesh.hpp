@@ -13,8 +13,8 @@ class Mesh
     private:
 
     public:
-        std::vector<Vertex> m_Vertices;
-        std::vector<unsigned int> m_Indices;
-        Mesh(std::vector<Vertex> vertices, std::vector<unsigned int> indices)
-            : m_Vertices(std::move(vertices)), m_Indices(std::move(indices)){}
+        const std::vector<Vertex>& m_Vertices;
+        const std::vector<unsigned int>& m_Indices;
+        Mesh(const std::vector<Vertex>& vertices, const std::vector<unsigned int>& indices)
+            : m_Vertices(vertices), m_Indices(indices){}
 };
