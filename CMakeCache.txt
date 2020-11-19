@@ -305,10 +305,13 @@ Fontconfig_LIBRARY:FILEPATH=/usr/lib/libfontconfig.so
 //Value Computed by CMake
 GLFW_BINARY_DIR:STATIC=/home/user/Documents/C++/Scop/libs/glfw
 
+//Build the GLFW documentation
 GLFW_BUILD_DOCS:BOOL=OFF
 
+//Build the GLFW example programs
 GLFW_BUILD_EXAMPLES:BOOL=OFF
 
+//Build the GLFW test programs
 GLFW_BUILD_TESTS:BOOL=OFF
 
 //Generate installation target
@@ -696,7 +699,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=1
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=3
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP
