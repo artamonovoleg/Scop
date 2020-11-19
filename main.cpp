@@ -50,7 +50,6 @@ int main()
 
     // render object
     OBJLoader loader;
-
     Mesh mesh = loader.LoadFromFile("res/objs/42.obj");
 
     unsigned int vao, vbo, tex_vbo, ebo, tex_ebo;
