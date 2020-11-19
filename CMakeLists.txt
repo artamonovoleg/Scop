@@ -21,13 +21,20 @@ add_subdirectory(${CMAKE_CURRENT_SOURCE_DIR}/libs/glfw/)
 set(INCLUDES    libs/glad/include
                 libs/glfw/include
                 libs/glm
-                libs/stb_image)
+                libs/stb_image
+                libs/imgui
+                libs/imgui/backends)
 
 set(SRCS    libs/glad/src/glad.c
             libs/stb_image/stb_image.cpp
             src/Shader.cpp
             src/Texture.cpp
-            main.cpp src/Vertex.hpp src/Material.hpp src/Light.hpp)
+
+            libs/imgui/backends/imgui_impl_glfw.cpp
+            libs/imgui/imgui.cpp
+            libs/imgui/imgui_draw.cpp
+            libs/imgui/imgui_widgets.cpp
+            main.cpp)
 
 include_directories(${INCLUDES})
 

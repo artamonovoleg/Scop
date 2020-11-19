@@ -242,6 +242,114 @@ libs/glad/src/glad.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Scop.dir/build.make CMakeFiles/Scop.dir/libs/glad/src/glad.c.s
 .PHONY : libs/glad/src/glad.c.s
 
+libs/imgui/backends/imgui_impl_glfw.o: libs/imgui/backends/imgui_impl_glfw.cpp.o
+
+.PHONY : libs/imgui/backends/imgui_impl_glfw.o
+
+# target to build an object file
+libs/imgui/backends/imgui_impl_glfw.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Scop.dir/build.make CMakeFiles/Scop.dir/libs/imgui/backends/imgui_impl_glfw.cpp.o
+.PHONY : libs/imgui/backends/imgui_impl_glfw.cpp.o
+
+libs/imgui/backends/imgui_impl_glfw.i: libs/imgui/backends/imgui_impl_glfw.cpp.i
+
+.PHONY : libs/imgui/backends/imgui_impl_glfw.i
+
+# target to preprocess a source file
+libs/imgui/backends/imgui_impl_glfw.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Scop.dir/build.make CMakeFiles/Scop.dir/libs/imgui/backends/imgui_impl_glfw.cpp.i
+.PHONY : libs/imgui/backends/imgui_impl_glfw.cpp.i
+
+libs/imgui/backends/imgui_impl_glfw.s: libs/imgui/backends/imgui_impl_glfw.cpp.s
+
+.PHONY : libs/imgui/backends/imgui_impl_glfw.s
+
+# target to generate assembly for a file
+libs/imgui/backends/imgui_impl_glfw.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Scop.dir/build.make CMakeFiles/Scop.dir/libs/imgui/backends/imgui_impl_glfw.cpp.s
+.PHONY : libs/imgui/backends/imgui_impl_glfw.cpp.s
+
+libs/imgui/imgui.o: libs/imgui/imgui.cpp.o
+
+.PHONY : libs/imgui/imgui.o
+
+# target to build an object file
+libs/imgui/imgui.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Scop.dir/build.make CMakeFiles/Scop.dir/libs/imgui/imgui.cpp.o
+.PHONY : libs/imgui/imgui.cpp.o
+
+libs/imgui/imgui.i: libs/imgui/imgui.cpp.i
+
+.PHONY : libs/imgui/imgui.i
+
+# target to preprocess a source file
+libs/imgui/imgui.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Scop.dir/build.make CMakeFiles/Scop.dir/libs/imgui/imgui.cpp.i
+.PHONY : libs/imgui/imgui.cpp.i
+
+libs/imgui/imgui.s: libs/imgui/imgui.cpp.s
+
+.PHONY : libs/imgui/imgui.s
+
+# target to generate assembly for a file
+libs/imgui/imgui.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Scop.dir/build.make CMakeFiles/Scop.dir/libs/imgui/imgui.cpp.s
+.PHONY : libs/imgui/imgui.cpp.s
+
+libs/imgui/imgui_draw.o: libs/imgui/imgui_draw.cpp.o
+
+.PHONY : libs/imgui/imgui_draw.o
+
+# target to build an object file
+libs/imgui/imgui_draw.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Scop.dir/build.make CMakeFiles/Scop.dir/libs/imgui/imgui_draw.cpp.o
+.PHONY : libs/imgui/imgui_draw.cpp.o
+
+libs/imgui/imgui_draw.i: libs/imgui/imgui_draw.cpp.i
+
+.PHONY : libs/imgui/imgui_draw.i
+
+# target to preprocess a source file
+libs/imgui/imgui_draw.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Scop.dir/build.make CMakeFiles/Scop.dir/libs/imgui/imgui_draw.cpp.i
+.PHONY : libs/imgui/imgui_draw.cpp.i
+
+libs/imgui/imgui_draw.s: libs/imgui/imgui_draw.cpp.s
+
+.PHONY : libs/imgui/imgui_draw.s
+
+# target to generate assembly for a file
+libs/imgui/imgui_draw.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Scop.dir/build.make CMakeFiles/Scop.dir/libs/imgui/imgui_draw.cpp.s
+.PHONY : libs/imgui/imgui_draw.cpp.s
+
+libs/imgui/imgui_widgets.o: libs/imgui/imgui_widgets.cpp.o
+
+.PHONY : libs/imgui/imgui_widgets.o
+
+# target to build an object file
+libs/imgui/imgui_widgets.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Scop.dir/build.make CMakeFiles/Scop.dir/libs/imgui/imgui_widgets.cpp.o
+.PHONY : libs/imgui/imgui_widgets.cpp.o
+
+libs/imgui/imgui_widgets.i: libs/imgui/imgui_widgets.cpp.i
+
+.PHONY : libs/imgui/imgui_widgets.i
+
+# target to preprocess a source file
+libs/imgui/imgui_widgets.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Scop.dir/build.make CMakeFiles/Scop.dir/libs/imgui/imgui_widgets.cpp.i
+.PHONY : libs/imgui/imgui_widgets.cpp.i
+
+libs/imgui/imgui_widgets.s: libs/imgui/imgui_widgets.cpp.s
+
+.PHONY : libs/imgui/imgui_widgets.s
+
+# target to generate assembly for a file
+libs/imgui/imgui_widgets.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Scop.dir/build.make CMakeFiles/Scop.dir/libs/imgui/imgui_widgets.cpp.s
+.PHONY : libs/imgui/imgui_widgets.cpp.s
+
 libs/stb_image/stb_image.o: libs/stb_image/stb_image.cpp.o
 
 .PHONY : libs/stb_image/stb_image.o
@@ -368,6 +476,18 @@ help:
 	@echo "... libs/glad/src/glad.o"
 	@echo "... libs/glad/src/glad.i"
 	@echo "... libs/glad/src/glad.s"
+	@echo "... libs/imgui/backends/imgui_impl_glfw.o"
+	@echo "... libs/imgui/backends/imgui_impl_glfw.i"
+	@echo "... libs/imgui/backends/imgui_impl_glfw.s"
+	@echo "... libs/imgui/imgui.o"
+	@echo "... libs/imgui/imgui.i"
+	@echo "... libs/imgui/imgui.s"
+	@echo "... libs/imgui/imgui_draw.o"
+	@echo "... libs/imgui/imgui_draw.i"
+	@echo "... libs/imgui/imgui_draw.s"
+	@echo "... libs/imgui/imgui_widgets.o"
+	@echo "... libs/imgui/imgui_widgets.i"
+	@echo "... libs/imgui/imgui_widgets.s"
 	@echo "... libs/stb_image/stb_image.o"
 	@echo "... libs/stb_image/stb_image.i"
 	@echo "... libs/stb_image/stb_image.s"
