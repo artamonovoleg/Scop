@@ -293,6 +293,12 @@
 		<Unit filename="/home/user/Documents/C++/Scop/main.cpp">
 			<Option target="Scop"/>
 		</Unit>
+		<Unit filename="/home/user/Documents/C++/Scop/src/Light.hpp">
+			<Option target="Scop"/>
+		</Unit>
+		<Unit filename="/home/user/Documents/C++/Scop/src/Material.hpp">
+			<Option target="Scop"/>
+		</Unit>
 		<Unit filename="/home/user/Documents/C++/Scop/src/Shader.cpp">
 			<Option target="Scop"/>
 		</Unit>

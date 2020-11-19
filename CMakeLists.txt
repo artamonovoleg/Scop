@@ -27,7 +27,7 @@ set(SRCS    libs/glad/src/glad.c
             libs/stb_image/stb_image.cpp
             src/Shader.cpp
             src/Texture.cpp
-            main.cpp src/Vertex.hpp)
+            main.cpp src/Vertex.hpp src/Material.hpp src/Light.hpp)
 
 include_directories(${INCLUDES})
 

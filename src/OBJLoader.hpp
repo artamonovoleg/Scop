@@ -8,6 +8,9 @@
 #include <iostream>
 #include <fstream>
 #include <sstream>
+
+#include "Material.hpp"
+#include "Light.hpp"
 #include "Mesh.hpp"
 
 class OBJLoader
@@ -23,6 +26,9 @@ class OBJLoader
 
         std::vector<Vertex> m_Vertices;
         std::vector<unsigned int> m_Indices;
+
+        Light m_Light;
+        Material m_Material;
 
         static void Triangulate(std::vector<unsigned int>& indices)
         {
