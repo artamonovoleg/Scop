@@ -288,10 +288,7 @@
 		<Unit filename="/home/user/Documents/C++/Scop/libs/glfw/src/xkb_unicode.h">
 			<Option target="glfw"/>
 		</Unit>
-		<Unit filename="/home/user/Documents/C++/Scop/libs/imgui/backends/imgui_impl_glfw.cpp">
-			<Option target="Scop"/>
-		</Unit>
-		<Unit filename="/home/user/Documents/C++/Scop/libs/imgui/backends/imgui_impl_glfw.h">
+		<Unit filename="/home/user/Documents/C++/Scop/libs/imgui/imconfig.h">
 			<Option target="Scop"/>
 		</Unit>
 		<Unit filename="/home/user/Documents/C++/Scop/libs/imgui/imgui.cpp">
@@ -300,10 +297,37 @@
 		<Unit filename="/home/user/Documents/C++/Scop/libs/imgui/imgui.h">
 			<Option target="Scop"/>
 		</Unit>
+		<Unit filename="/home/user/Documents/C++/Scop/libs/imgui/imgui_demo.cpp">
+			<Option target="Scop"/>
+		</Unit>
 		<Unit filename="/home/user/Documents/C++/Scop/libs/imgui/imgui_draw.cpp">
 			<Option target="Scop"/>
 		</Unit>
+		<Unit filename="/home/user/Documents/C++/Scop/libs/imgui/imgui_impl_glfw.cpp">
+			<Option target="Scop"/>
+		</Unit>
+		<Unit filename="/home/user/Documents/C++/Scop/libs/imgui/imgui_impl_glfw.h">
+			<Option target="Scop"/>
+		</Unit>
+		<Unit filename="/home/user/Documents/C++/Scop/libs/imgui/imgui_impl_opengl3.cpp">
+			<Option target="Scop"/>
+		</Unit>
+		<Unit filename="/home/user/Documents/C++/Scop/libs/imgui/imgui_impl_opengl3.h">
+			<Option target="Scop"/>
+		</Unit>
+		<Unit filename="/home/user/Documents/C++/Scop/libs/imgui/imgui_internal.h">
+			<Option target="Scop"/>
+		</Unit>
 		<Unit filename="/home/user/Documents/C++/Scop/libs/imgui/imgui_widgets.cpp">
+			<Option target="Scop"/>
+		</Unit>
+		<Unit filename="/home/user/Documents/C++/Scop/libs/imgui/imstb_rectpack.h">
+			<Option target="Scop"/>
+		</Unit>
+		<Unit filename="/home/user/Documents/C++/Scop/libs/imgui/imstb_textedit.h">
+			<Option target="Scop"/>
+		</Unit>
+		<Unit filename="/home/user/Documents/C++/Scop/libs/imgui/imstb_truetype.h">
 			<Option target="Scop"/>
 		</Unit>
 		<Unit filename="/home/user/Documents/C++/Scop/libs/stb_image/stb_image.cpp">

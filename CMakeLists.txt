@@ -30,10 +30,20 @@ set(SRCS    libs/glad/src/glad.c
             src/Shader.cpp
             src/Texture.cpp
 
-            libs/imgui/backends/imgui_impl_glfw.cpp
-            libs/imgui/imgui.cpp
-            libs/imgui/imgui_draw.cpp
-            libs/imgui/imgui_widgets.cpp
+        libs/imgui/imconfig.h
+        libs/imgui/imgui_demo.cpp
+        libs/imgui/imgui_draw.cpp
+        libs/imgui/imgui_impl_glfw.cpp
+        libs/imgui/imgui_impl_glfw.h
+        libs/imgui/imgui_impl_opengl3.cpp
+        libs/imgui/imgui_impl_opengl3.h
+        libs/imgui/imgui_internal.h
+        libs/imgui/imgui_widgets.cpp
+        libs/imgui/imgui.cpp
+        libs/imgui/imgui.h
+        libs/imgui/imstb_rectpack.h
+        libs/imgui/imstb_textedit.h
+        libs/imgui/imstb_truetype.h
             main.cpp)
 
 include_directories(${INCLUDES})
