@@ -23,6 +23,81 @@ glm::vec3 cameraUp    = glm::vec3(0.0f, 1.0f, 0.0f);
 // GL 3.0 + GLSL 130
 const char* glsl_version = "#version 130";
 
+
+class VertexArray
+{
+    private:
+        unsigned int m_ID;
+    public:
+        VertexArray()
+        {
+            glGenVertexArrays(1, &m_ID);
+            glBindVertexArray(m_ID);
+        }
+
+        ~VertexArray()
+        {
+            glDeleteVertexArrays(1, &m_ID);
+        }
+
+        void Bind() const
+        {
+            glBindVertexArray(m_ID);
+        }
+
+        void Unbind() const
+        {
+            glBindVertexArray(0);
+        }
+
+};
+
+template <typename T>
+class VertexBuffer
+{
+    private:
+        unsigned int m_ID;
+        const T* m_Data;
+        const size_t m_Size;
+    public:
+        VertexBuffer(const T* data, size_t size)
+            : m_Data(data), m_Size(size)
+        {
+            glGenBuffers(1, &m_ID);
+            glBindBuffer(GL_ARRAY_BUFFER, m_ID);
+            glBufferData(GL_ARRAY_BUFFER, m_Size * sizeof(T), m_Data, GL_STATIC_DRAW);
+        }
+
+        void Bind() const
+        {
+            glBindBuffer(GL_ARRAY_BUFFER, m_ID);
+            glBufferData(GL_ARRAY_BUFFER, m_Size * sizeof(T), m_Data, GL_STATIC_DRAW);
+        }
+
+        void Unbind() const
+        {
+            glBindBuffer(GL_ARRAY_BUFFER, 0);
+        }
+};
+
+
+class VertexBuffersLayout
+{
+    private:
+        mutable int m_Count = 0;
+    public:
+        VertexBuffersLayout() = default;
+        ~VertexBuffersLayout() = default;
+
+        template<typename T>
+        void Push(unsigned int amount, unsigned int stride, unsigned int offset) const
+        {
+            glVertexAttribPointer(m_Count, amount, GL_FLOAT, GL_FALSE, stride * sizeof(T), (void *)(offset * sizeof(T)));
+            glEnableVertexAttribArray(m_Count);
+            m_Count++;
+        }
+};
+
 int main()
 {
     GLFWwindow* window = nullptr;
@@ -48,33 +123,47 @@ int main()
 
     glViewport(0, 0, 800, 600);
 //-----------------------------------Create render objects------------------------------------------------------------//
+
+    /* TODO:
+     * 1. Think about buffer abstraction
+     * 2. Layout can take only amount and type
+    */
+
     // load model
     Mesh mesh = loader.LoadFromFile("res/objs/spheres1.obj");
     // load model to buffers
-    unsigned int vao, vbo, tex_vbo, ebo, tex_ebo;
+    unsigned int vao, vbo, ebo;
+    VertexArray va;
+    va.Bind();
+    VertexBuffer<Vertex> vb(mesh.m_Vertices.data(), mesh.m_Vertices.size());
+    vb.Bind();
+//    VertexBuffer<unsigned int> eb(mesh.m_Indices.data(), mesh.m_Indices.size());
+//    eb.Bind();
 
-    glGenVertexArrays(1, &vao);
-    glGenBuffers(1, &vbo);
-    glGenBuffers(1, &tex_vbo);
+//    glGenVertexArrays(1, &vao);
+//    glGenBuffers(1, &vbo);
     glGenBuffers(1, &ebo);
-    glGenBuffers(1, &tex_ebo);
-
-    glBindVertexArray(vao);
-    glBindBuffer(GL_ARRAY_BUFFER, vbo);
-
-    glBufferData(GL_ARRAY_BUFFER, mesh.m_Vertices.size() * sizeof(Vertex), mesh.m_Vertices.data(), GL_STATIC_DRAW);
-
+//
+//    glBindVertexArray(vao);
+//    glBindBuffer(GL_ARRAY_BUFFER, vbo);
+//
+//    glBufferData(GL_ARRAY_BUFFER, mesh.m_Vertices.size() * sizeof(Vertex), mesh.m_Vertices.data(), GL_STATIC_DRAW);
     glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, ebo);
     glBufferData(GL_ELEMENT_ARRAY_BUFFER, mesh.m_Indices.size() * sizeof(unsigned int), mesh.m_Indices.data(), GL_STATIC_DRAW);
-    // positions
-    glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 8 * sizeof(float), nullptr);
-    glEnableVertexAttribArray(0);
-    // textures
-    glVertexAttribPointer(1, 2, GL_FLOAT, GL_FALSE, 8 * sizeof(float), (void*)(3 * sizeof(float)));
-    glEnableVertexAttribArray(1);
-    // normals
-    glVertexAttribPointer(2, 3, GL_FLOAT, GL_FALSE, 8 * sizeof(float), (void*)(5 * sizeof(float)));
-    glEnableVertexAttribArray(2);
+
+    VertexBuffersLayout layout;
+    layout.Push<float>(3, 8, 0);
+    layout.Push<float>(2, 8, 3);
+    layout.Push<float>(3, 8, 5);
+//    // positions
+//    glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 8 * sizeof(float), nullptr);
+//    glEnableVertexAttribArray(0);
+//    // textures
+//    glVertexAttribPointer(1, 2, GL_FLOAT, GL_FALSE, 8 * sizeof(float), (void*)(3 * sizeof(float)));
+//    glEnableVertexAttribArray(1);
+//    // normals
+//    glVertexAttribPointer(2, 3, GL_FLOAT, GL_FALSE, 8 * sizeof(float), (void*)(5 * sizeof(float)));
+//    glEnableVertexAttribArray(2);
 
     glEnable(GL_DEPTH_TEST);
 
@@ -125,7 +214,8 @@ int main()
             glClearColor(0.5, 0.5, 0.5, 0.5);
             texture.Bind();
             shader.Bind();
-            glBindVertexArray(vao);
+//            glBindVertexArray(vao);
+            va.Bind();
             glDrawElements(GL_TRIANGLES, mesh.m_Indices.size(), GL_UNSIGNED_INT, nullptr);
 //-----------------------------Every frame logic----------------------------------------------------------------------//
             glfwSwapBuffers(window);
