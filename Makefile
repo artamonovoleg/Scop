@@ -190,6 +190,19 @@ Scop/fast:
 .PHONY : Scop/fast
 
 #=============================================================================
+# Target rules for targets named glad
+
+# Build rule for target.
+glad: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 glad
+.PHONY : glad
+
+# fast build rule for target.
+glad/fast:
+	$(MAKE) $(MAKESILENT) -f libs/CMakeFiles/glad.dir/build.make libs/CMakeFiles/glad.dir/build
+.PHONY : glad/fast
+
+#=============================================================================
 # Target rules for targets named uninstall
 
 # Build rule for target.
@@ -214,6 +227,19 @@ glfw: cmake_check_build_system
 glfw/fast:
 	$(MAKE) $(MAKESILENT) -f libs/glfw/src/CMakeFiles/glfw.dir/build.make libs/glfw/src/CMakeFiles/glfw.dir/build
 .PHONY : glfw/fast
+
+#=============================================================================
+# Target rules for targets named imgui
+
+# Build rule for target.
+imgui: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 imgui
+.PHONY : imgui
+
+# fast build rule for target.
+imgui/fast:
+	$(MAKE) $(MAKESILENT) -f libs/imgui/CMakeFiles/imgui.dir/build.make libs/imgui/CMakeFiles/imgui.dir/build
+.PHONY : imgui/fast
 
 libs/glad/src/glad.o: libs/glad/src/glad.c.o
 
@@ -268,33 +294,6 @@ libs/imgui/imgui.s: libs/imgui/imgui.cpp.s
 libs/imgui/imgui.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Scop.dir/build.make CMakeFiles/Scop.dir/libs/imgui/imgui.cpp.s
 .PHONY : libs/imgui/imgui.cpp.s
-
-libs/imgui/imgui_demo.o: libs/imgui/imgui_demo.cpp.o
-
-.PHONY : libs/imgui/imgui_demo.o
-
-# target to build an object file
-libs/imgui/imgui_demo.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Scop.dir/build.make CMakeFiles/Scop.dir/libs/imgui/imgui_demo.cpp.o
-.PHONY : libs/imgui/imgui_demo.cpp.o
-
-libs/imgui/imgui_demo.i: libs/imgui/imgui_demo.cpp.i
-
-.PHONY : libs/imgui/imgui_demo.i
-
-# target to preprocess a source file
-libs/imgui/imgui_demo.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Scop.dir/build.make CMakeFiles/Scop.dir/libs/imgui/imgui_demo.cpp.i
-.PHONY : libs/imgui/imgui_demo.cpp.i
-
-libs/imgui/imgui_demo.s: libs/imgui/imgui_demo.cpp.s
-
-.PHONY : libs/imgui/imgui_demo.s
-
-# target to generate assembly for a file
-libs/imgui/imgui_demo.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Scop.dir/build.make CMakeFiles/Scop.dir/libs/imgui/imgui_demo.cpp.s
-.PHONY : libs/imgui/imgui_demo.cpp.s
 
 libs/imgui/imgui_draw.o: libs/imgui/imgui_draw.cpp.o
 
@@ -526,16 +525,15 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... uninstall"
 	@echo "... Scop"
+	@echo "... glad"
 	@echo "... glfw"
+	@echo "... imgui"
 	@echo "... libs/glad/src/glad.o"
 	@echo "... libs/glad/src/glad.i"
 	@echo "... libs/glad/src/glad.s"
 	@echo "... libs/imgui/imgui.o"
 	@echo "... libs/imgui/imgui.i"
 	@echo "... libs/imgui/imgui.s"
-	@echo "... libs/imgui/imgui_demo.o"
-	@echo "... libs/imgui/imgui_demo.i"
-	@echo "... libs/imgui/imgui_demo.s"
 	@echo "... libs/imgui/imgui_draw.o"
 	@echo "... libs/imgui/imgui_draw.i"
 	@echo "... libs/imgui/imgui_draw.s"

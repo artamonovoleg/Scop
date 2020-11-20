@@ -103,44 +103,44 @@ CMakeFiles/Scop.dir/libs/stb_image/stb_image.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Scop.dir/libs/stb_image/stb_image.cpp.s"
 	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/user/Documents/C++/Scop/libs/stb_image/stb_image.cpp -o CMakeFiles/Scop.dir/libs/stb_image/stb_image.cpp.s
 
-CMakeFiles/Scop.dir/src/Shader.cpp.o: CMakeFiles/Scop.dir/flags.make
-CMakeFiles/Scop.dir/src/Shader.cpp.o: src/Shader.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/Documents/C++/Scop/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Scop.dir/src/Shader.cpp.o"
-	/usr/bin/clang++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Scop.dir/src/Shader.cpp.o -c /home/user/Documents/C++/Scop/src/Shader.cpp
+CMakeFiles/Scop.dir/libs/imgui/imgui_impl_glfw.cpp.o: CMakeFiles/Scop.dir/flags.make
+CMakeFiles/Scop.dir/libs/imgui/imgui_impl_glfw.cpp.o: libs/imgui/imgui_impl_glfw.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/Documents/C++/Scop/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Scop.dir/libs/imgui/imgui_impl_glfw.cpp.o"
+	/usr/bin/clang++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Scop.dir/libs/imgui/imgui_impl_glfw.cpp.o -c /home/user/Documents/C++/Scop/libs/imgui/imgui_impl_glfw.cpp
 
-CMakeFiles/Scop.dir/src/Shader.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Scop.dir/src/Shader.cpp.i"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/user/Documents/C++/Scop/src/Shader.cpp > CMakeFiles/Scop.dir/src/Shader.cpp.i
+CMakeFiles/Scop.dir/libs/imgui/imgui_impl_glfw.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Scop.dir/libs/imgui/imgui_impl_glfw.cpp.i"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/user/Documents/C++/Scop/libs/imgui/imgui_impl_glfw.cpp > CMakeFiles/Scop.dir/libs/imgui/imgui_impl_glfw.cpp.i
 
-CMakeFiles/Scop.dir/src/Shader.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Scop.dir/src/Shader.cpp.s"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/user/Documents/C++/Scop/src/Shader.cpp -o CMakeFiles/Scop.dir/src/Shader.cpp.s
+CMakeFiles/Scop.dir/libs/imgui/imgui_impl_glfw.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Scop.dir/libs/imgui/imgui_impl_glfw.cpp.s"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/user/Documents/C++/Scop/libs/imgui/imgui_impl_glfw.cpp -o CMakeFiles/Scop.dir/libs/imgui/imgui_impl_glfw.cpp.s
 
-CMakeFiles/Scop.dir/src/Texture.cpp.o: CMakeFiles/Scop.dir/flags.make
-CMakeFiles/Scop.dir/src/Texture.cpp.o: src/Texture.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/Documents/C++/Scop/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Scop.dir/src/Texture.cpp.o"
-	/usr/bin/clang++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Scop.dir/src/Texture.cpp.o -c /home/user/Documents/C++/Scop/src/Texture.cpp
+CMakeFiles/Scop.dir/libs/imgui/imgui_impl_opengl3.cpp.o: CMakeFiles/Scop.dir/flags.make
+CMakeFiles/Scop.dir/libs/imgui/imgui_impl_opengl3.cpp.o: libs/imgui/imgui_impl_opengl3.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/Documents/C++/Scop/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Scop.dir/libs/imgui/imgui_impl_opengl3.cpp.o"
+	/usr/bin/clang++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Scop.dir/libs/imgui/imgui_impl_opengl3.cpp.o -c /home/user/Documents/C++/Scop/libs/imgui/imgui_impl_opengl3.cpp
 
-CMakeFiles/Scop.dir/src/Texture.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Scop.dir/src/Texture.cpp.i"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/user/Documents/C++/Scop/src/Texture.cpp > CMakeFiles/Scop.dir/src/Texture.cpp.i
+CMakeFiles/Scop.dir/libs/imgui/imgui_impl_opengl3.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Scop.dir/libs/imgui/imgui_impl_opengl3.cpp.i"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/user/Documents/C++/Scop/libs/imgui/imgui_impl_opengl3.cpp > CMakeFiles/Scop.dir/libs/imgui/imgui_impl_opengl3.cpp.i
 
-CMakeFiles/Scop.dir/src/Texture.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Scop.dir/src/Texture.cpp.s"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/user/Documents/C++/Scop/src/Texture.cpp -o CMakeFiles/Scop.dir/src/Texture.cpp.s
+CMakeFiles/Scop.dir/libs/imgui/imgui_impl_opengl3.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Scop.dir/libs/imgui/imgui_impl_opengl3.cpp.s"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/user/Documents/C++/Scop/libs/imgui/imgui_impl_opengl3.cpp -o CMakeFiles/Scop.dir/libs/imgui/imgui_impl_opengl3.cpp.s
 
-CMakeFiles/Scop.dir/libs/imgui/imgui_demo.cpp.o: CMakeFiles/Scop.dir/flags.make
-CMakeFiles/Scop.dir/libs/imgui/imgui_demo.cpp.o: libs/imgui/imgui_demo.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/Documents/C++/Scop/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/Scop.dir/libs/imgui/imgui_demo.cpp.o"
-	/usr/bin/clang++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Scop.dir/libs/imgui/imgui_demo.cpp.o -c /home/user/Documents/C++/Scop/libs/imgui/imgui_demo.cpp
+CMakeFiles/Scop.dir/libs/imgui/imgui_widgets.cpp.o: CMakeFiles/Scop.dir/flags.make
+CMakeFiles/Scop.dir/libs/imgui/imgui_widgets.cpp.o: libs/imgui/imgui_widgets.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/Documents/C++/Scop/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/Scop.dir/libs/imgui/imgui_widgets.cpp.o"
+	/usr/bin/clang++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Scop.dir/libs/imgui/imgui_widgets.cpp.o -c /home/user/Documents/C++/Scop/libs/imgui/imgui_widgets.cpp
 
-CMakeFiles/Scop.dir/libs/imgui/imgui_demo.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Scop.dir/libs/imgui/imgui_demo.cpp.i"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/user/Documents/C++/Scop/libs/imgui/imgui_demo.cpp > CMakeFiles/Scop.dir/libs/imgui/imgui_demo.cpp.i
+CMakeFiles/Scop.dir/libs/imgui/imgui_widgets.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Scop.dir/libs/imgui/imgui_widgets.cpp.i"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/user/Documents/C++/Scop/libs/imgui/imgui_widgets.cpp > CMakeFiles/Scop.dir/libs/imgui/imgui_widgets.cpp.i
 
-CMakeFiles/Scop.dir/libs/imgui/imgui_demo.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Scop.dir/libs/imgui/imgui_demo.cpp.s"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/user/Documents/C++/Scop/libs/imgui/imgui_demo.cpp -o CMakeFiles/Scop.dir/libs/imgui/imgui_demo.cpp.s
+CMakeFiles/Scop.dir/libs/imgui/imgui_widgets.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Scop.dir/libs/imgui/imgui_widgets.cpp.s"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/user/Documents/C++/Scop/libs/imgui/imgui_widgets.cpp -o CMakeFiles/Scop.dir/libs/imgui/imgui_widgets.cpp.s
 
 CMakeFiles/Scop.dir/libs/imgui/imgui_draw.cpp.o: CMakeFiles/Scop.dir/flags.make
 CMakeFiles/Scop.dir/libs/imgui/imgui_draw.cpp.o: libs/imgui/imgui_draw.cpp
@@ -155,48 +155,9 @@ CMakeFiles/Scop.dir/libs/imgui/imgui_draw.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Scop.dir/libs/imgui/imgui_draw.cpp.s"
 	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/user/Documents/C++/Scop/libs/imgui/imgui_draw.cpp -o CMakeFiles/Scop.dir/libs/imgui/imgui_draw.cpp.s
 
-CMakeFiles/Scop.dir/libs/imgui/imgui_impl_glfw.cpp.o: CMakeFiles/Scop.dir/flags.make
-CMakeFiles/Scop.dir/libs/imgui/imgui_impl_glfw.cpp.o: libs/imgui/imgui_impl_glfw.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/Documents/C++/Scop/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/Scop.dir/libs/imgui/imgui_impl_glfw.cpp.o"
-	/usr/bin/clang++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Scop.dir/libs/imgui/imgui_impl_glfw.cpp.o -c /home/user/Documents/C++/Scop/libs/imgui/imgui_impl_glfw.cpp
-
-CMakeFiles/Scop.dir/libs/imgui/imgui_impl_glfw.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Scop.dir/libs/imgui/imgui_impl_glfw.cpp.i"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/user/Documents/C++/Scop/libs/imgui/imgui_impl_glfw.cpp > CMakeFiles/Scop.dir/libs/imgui/imgui_impl_glfw.cpp.i
-
-CMakeFiles/Scop.dir/libs/imgui/imgui_impl_glfw.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Scop.dir/libs/imgui/imgui_impl_glfw.cpp.s"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/user/Documents/C++/Scop/libs/imgui/imgui_impl_glfw.cpp -o CMakeFiles/Scop.dir/libs/imgui/imgui_impl_glfw.cpp.s
-
-CMakeFiles/Scop.dir/libs/imgui/imgui_impl_opengl3.cpp.o: CMakeFiles/Scop.dir/flags.make
-CMakeFiles/Scop.dir/libs/imgui/imgui_impl_opengl3.cpp.o: libs/imgui/imgui_impl_opengl3.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/Documents/C++/Scop/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/Scop.dir/libs/imgui/imgui_impl_opengl3.cpp.o"
-	/usr/bin/clang++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Scop.dir/libs/imgui/imgui_impl_opengl3.cpp.o -c /home/user/Documents/C++/Scop/libs/imgui/imgui_impl_opengl3.cpp
-
-CMakeFiles/Scop.dir/libs/imgui/imgui_impl_opengl3.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Scop.dir/libs/imgui/imgui_impl_opengl3.cpp.i"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/user/Documents/C++/Scop/libs/imgui/imgui_impl_opengl3.cpp > CMakeFiles/Scop.dir/libs/imgui/imgui_impl_opengl3.cpp.i
-
-CMakeFiles/Scop.dir/libs/imgui/imgui_impl_opengl3.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Scop.dir/libs/imgui/imgui_impl_opengl3.cpp.s"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/user/Documents/C++/Scop/libs/imgui/imgui_impl_opengl3.cpp -o CMakeFiles/Scop.dir/libs/imgui/imgui_impl_opengl3.cpp.s
-
-CMakeFiles/Scop.dir/libs/imgui/imgui_widgets.cpp.o: CMakeFiles/Scop.dir/flags.make
-CMakeFiles/Scop.dir/libs/imgui/imgui_widgets.cpp.o: libs/imgui/imgui_widgets.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/Documents/C++/Scop/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/Scop.dir/libs/imgui/imgui_widgets.cpp.o"
-	/usr/bin/clang++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Scop.dir/libs/imgui/imgui_widgets.cpp.o -c /home/user/Documents/C++/Scop/libs/imgui/imgui_widgets.cpp
-
-CMakeFiles/Scop.dir/libs/imgui/imgui_widgets.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Scop.dir/libs/imgui/imgui_widgets.cpp.i"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/user/Documents/C++/Scop/libs/imgui/imgui_widgets.cpp > CMakeFiles/Scop.dir/libs/imgui/imgui_widgets.cpp.i
-
-CMakeFiles/Scop.dir/libs/imgui/imgui_widgets.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Scop.dir/libs/imgui/imgui_widgets.cpp.s"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/user/Documents/C++/Scop/libs/imgui/imgui_widgets.cpp -o CMakeFiles/Scop.dir/libs/imgui/imgui_widgets.cpp.s
-
 CMakeFiles/Scop.dir/libs/imgui/imgui.cpp.o: CMakeFiles/Scop.dir/flags.make
 CMakeFiles/Scop.dir/libs/imgui/imgui.cpp.o: libs/imgui/imgui.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/Documents/C++/Scop/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/Scop.dir/libs/imgui/imgui.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/Documents/C++/Scop/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/Scop.dir/libs/imgui/imgui.cpp.o"
 	/usr/bin/clang++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Scop.dir/libs/imgui/imgui.cpp.o -c /home/user/Documents/C++/Scop/libs/imgui/imgui.cpp
 
 CMakeFiles/Scop.dir/libs/imgui/imgui.cpp.i: cmake_force
@@ -207,9 +168,35 @@ CMakeFiles/Scop.dir/libs/imgui/imgui.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Scop.dir/libs/imgui/imgui.cpp.s"
 	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/user/Documents/C++/Scop/libs/imgui/imgui.cpp -o CMakeFiles/Scop.dir/libs/imgui/imgui.cpp.s
 
+CMakeFiles/Scop.dir/src/Shader.cpp.o: CMakeFiles/Scop.dir/flags.make
+CMakeFiles/Scop.dir/src/Shader.cpp.o: src/Shader.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/Documents/C++/Scop/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/Scop.dir/src/Shader.cpp.o"
+	/usr/bin/clang++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Scop.dir/src/Shader.cpp.o -c /home/user/Documents/C++/Scop/src/Shader.cpp
+
+CMakeFiles/Scop.dir/src/Shader.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Scop.dir/src/Shader.cpp.i"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/user/Documents/C++/Scop/src/Shader.cpp > CMakeFiles/Scop.dir/src/Shader.cpp.i
+
+CMakeFiles/Scop.dir/src/Shader.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Scop.dir/src/Shader.cpp.s"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/user/Documents/C++/Scop/src/Shader.cpp -o CMakeFiles/Scop.dir/src/Shader.cpp.s
+
+CMakeFiles/Scop.dir/src/Texture.cpp.o: CMakeFiles/Scop.dir/flags.make
+CMakeFiles/Scop.dir/src/Texture.cpp.o: src/Texture.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/Documents/C++/Scop/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/Scop.dir/src/Texture.cpp.o"
+	/usr/bin/clang++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Scop.dir/src/Texture.cpp.o -c /home/user/Documents/C++/Scop/src/Texture.cpp
+
+CMakeFiles/Scop.dir/src/Texture.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Scop.dir/src/Texture.cpp.i"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/user/Documents/C++/Scop/src/Texture.cpp > CMakeFiles/Scop.dir/src/Texture.cpp.i
+
+CMakeFiles/Scop.dir/src/Texture.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Scop.dir/src/Texture.cpp.s"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/user/Documents/C++/Scop/src/Texture.cpp -o CMakeFiles/Scop.dir/src/Texture.cpp.s
+
 CMakeFiles/Scop.dir/main.cpp.o: CMakeFiles/Scop.dir/flags.make
 CMakeFiles/Scop.dir/main.cpp.o: main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/Documents/C++/Scop/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/Scop.dir/main.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/Documents/C++/Scop/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/Scop.dir/main.cpp.o"
 	/usr/bin/clang++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Scop.dir/main.cpp.o -c /home/user/Documents/C++/Scop/main.cpp
 
 CMakeFiles/Scop.dir/main.cpp.i: cmake_force
@@ -224,14 +211,13 @@ CMakeFiles/Scop.dir/main.cpp.s: cmake_force
 Scop_OBJECTS = \
 "CMakeFiles/Scop.dir/libs/glad/src/glad.c.o" \
 "CMakeFiles/Scop.dir/libs/stb_image/stb_image.cpp.o" \
-"CMakeFiles/Scop.dir/src/Shader.cpp.o" \
-"CMakeFiles/Scop.dir/src/Texture.cpp.o" \
-"CMakeFiles/Scop.dir/libs/imgui/imgui_demo.cpp.o" \
-"CMakeFiles/Scop.dir/libs/imgui/imgui_draw.cpp.o" \
 "CMakeFiles/Scop.dir/libs/imgui/imgui_impl_glfw.cpp.o" \
 "CMakeFiles/Scop.dir/libs/imgui/imgui_impl_opengl3.cpp.o" \
 "CMakeFiles/Scop.dir/libs/imgui/imgui_widgets.cpp.o" \
+"CMakeFiles/Scop.dir/libs/imgui/imgui_draw.cpp.o" \
 "CMakeFiles/Scop.dir/libs/imgui/imgui.cpp.o" \
+"CMakeFiles/Scop.dir/src/Shader.cpp.o" \
+"CMakeFiles/Scop.dir/src/Texture.cpp.o" \
 "CMakeFiles/Scop.dir/main.cpp.o"
 
 # External object files for target Scop
@@ -239,21 +225,20 @@ Scop_EXTERNAL_OBJECTS =
 
 Scop: CMakeFiles/Scop.dir/libs/glad/src/glad.c.o
 Scop: CMakeFiles/Scop.dir/libs/stb_image/stb_image.cpp.o
-Scop: CMakeFiles/Scop.dir/src/Shader.cpp.o
-Scop: CMakeFiles/Scop.dir/src/Texture.cpp.o
-Scop: CMakeFiles/Scop.dir/libs/imgui/imgui_demo.cpp.o
-Scop: CMakeFiles/Scop.dir/libs/imgui/imgui_draw.cpp.o
 Scop: CMakeFiles/Scop.dir/libs/imgui/imgui_impl_glfw.cpp.o
 Scop: CMakeFiles/Scop.dir/libs/imgui/imgui_impl_opengl3.cpp.o
 Scop: CMakeFiles/Scop.dir/libs/imgui/imgui_widgets.cpp.o
+Scop: CMakeFiles/Scop.dir/libs/imgui/imgui_draw.cpp.o
 Scop: CMakeFiles/Scop.dir/libs/imgui/imgui.cpp.o
+Scop: CMakeFiles/Scop.dir/src/Shader.cpp.o
+Scop: CMakeFiles/Scop.dir/src/Texture.cpp.o
 Scop: CMakeFiles/Scop.dir/main.cpp.o
 Scop: CMakeFiles/Scop.dir/build.make
 Scop: libs/glfw/src/libglfw3.a
 Scop: /usr/lib/librt.so
 Scop: /usr/lib/libm.so
 Scop: CMakeFiles/Scop.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/user/Documents/C++/Scop/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Linking CXX executable Scop"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/user/Documents/C++/Scop/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Linking CXX executable Scop"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Scop.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

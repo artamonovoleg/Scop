@@ -11,10 +11,6 @@ CMakeFiles/Scop.dir/libs/imgui/imgui.cpp.o: libs/imgui/imgui.h
 CMakeFiles/Scop.dir/libs/imgui/imgui.cpp.o: libs/imgui/imgui_internal.h
 CMakeFiles/Scop.dir/libs/imgui/imgui.cpp.o: libs/imgui/imstb_textedit.h
 
-CMakeFiles/Scop.dir/libs/imgui/imgui_demo.cpp.o: libs/imgui/imconfig.h
-CMakeFiles/Scop.dir/libs/imgui/imgui_demo.cpp.o: libs/imgui/imgui.h
-CMakeFiles/Scop.dir/libs/imgui/imgui_demo.cpp.o: libs/imgui/imgui_demo.cpp
-
 CMakeFiles/Scop.dir/libs/imgui/imgui_draw.cpp.o: libs/imgui/imconfig.h
 CMakeFiles/Scop.dir/libs/imgui/imgui_draw.cpp.o: libs/imgui/imgui.h
 CMakeFiles/Scop.dir/libs/imgui/imgui_draw.cpp.o: libs/imgui/imgui_draw.cpp
@@ -220,6 +216,10 @@ CMakeFiles/Scop.dir/main.cpp.o: libs/glm/glm/vec2.hpp
 CMakeFiles/Scop.dir/main.cpp.o: libs/glm/glm/vec3.hpp
 CMakeFiles/Scop.dir/main.cpp.o: libs/glm/glm/vec4.hpp
 CMakeFiles/Scop.dir/main.cpp.o: libs/glm/glm/vector_relational.hpp
+CMakeFiles/Scop.dir/main.cpp.o: libs/imgui/imconfig.h
+CMakeFiles/Scop.dir/main.cpp.o: libs/imgui/imgui.h
+CMakeFiles/Scop.dir/main.cpp.o: libs/imgui/imgui_impl_glfw.h
+CMakeFiles/Scop.dir/main.cpp.o: libs/imgui/imgui_impl_opengl3.h
 
 CMakeFiles/Scop.dir/src/Shader.cpp.o: src/Shader.cpp
 CMakeFiles/Scop.dir/src/Shader.cpp.o: src/Shader.hpp

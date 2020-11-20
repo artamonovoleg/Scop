@@ -1,7 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/Scop.dir/libs/glad/src/glad.c.o"
   "CMakeFiles/Scop.dir/libs/imgui/imgui.cpp.o"
-  "CMakeFiles/Scop.dir/libs/imgui/imgui_demo.cpp.o"
   "CMakeFiles/Scop.dir/libs/imgui/imgui_draw.cpp.o"
   "CMakeFiles/Scop.dir/libs/imgui/imgui_impl_glfw.cpp.o"
   "CMakeFiles/Scop.dir/libs/imgui/imgui_impl_opengl3.cpp.o"

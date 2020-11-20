@@ -5,7 +5,7 @@
 		<Option title="Scop"/>
 		<Option makefile_is_custom="1"/>
 		<Option compiler="clang"/>
-		<Option virtualFolders="CMake Files\;CMake Files\libs\;CMake Files\libs\glfw\;CMake Files\libs\glfw\CMake\;CMake Files\libs\glfw\src\;"/>
+		<Option virtualFolders="CMake Files\;CMake Files\libs\;CMake Files\libs\glfw\;CMake Files\libs\glfw\CMake\;CMake Files\libs\glfw\src\;CMake Files\libs\glm\;CMake Files\libs\glm\glm\;CMake Files\libs\imgui\;"/>
 		<Build>
 			<Target title="all">
 				<Option working_dir="/home/user/Documents/C++/Scop"/>
@@ -44,12 +44,13 @@
 				<Option type="1"/>
 				<Option compiler="clang"/>
 				<Compiler>
+					<Add option="-DIMGUI_IMPL_OPENGL_LOADER_GLAD"/>
 					<Add directory="/home/user/Documents/C++/Scop/libs/glad/include"/>
 					<Add directory="/home/user/Documents/C++/Scop/libs/glfw/include"/>
 					<Add directory="/home/user/Documents/C++/Scop/libs/glm"/>
 					<Add directory="/home/user/Documents/C++/Scop/libs/stb_image"/>
-					<Add directory="/home/user/Documents/C++/Scop/libs/imgui"/>
 					<Add directory="/home/user/Documents/C++/Scop/libs/imgui/backends"/>
+					<Add directory="/home/user/Documents/C++/Scop/libs/imgui"/>
 					<Add directory="/usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/10.2.0/../../../../include/c++/10.2.0"/>
 					<Add directory="/usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/10.2.0/../../../../include/c++/10.2.0/x86_64-pc-linux-gnu"/>
 					<Add directory="/usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/10.2.0/../../../../include/c++/10.2.0/backward"/>
@@ -73,12 +74,13 @@
 				<Option type="1"/>
 				<Option compiler="clang"/>
 				<Compiler>
+					<Add option="-DIMGUI_IMPL_OPENGL_LOADER_GLAD"/>
 					<Add directory="/home/user/Documents/C++/Scop/libs/glad/include"/>
 					<Add directory="/home/user/Documents/C++/Scop/libs/glfw/include"/>
 					<Add directory="/home/user/Documents/C++/Scop/libs/glm"/>
 					<Add directory="/home/user/Documents/C++/Scop/libs/stb_image"/>
-					<Add directory="/home/user/Documents/C++/Scop/libs/imgui"/>
 					<Add directory="/home/user/Documents/C++/Scop/libs/imgui/backends"/>
+					<Add directory="/home/user/Documents/C++/Scop/libs/imgui"/>
 					<Add directory="/usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/10.2.0/../../../../include/c++/10.2.0"/>
 					<Add directory="/usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/10.2.0/../../../../include/c++/10.2.0/x86_64-pc-linux-gnu"/>
 					<Add directory="/usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/10.2.0/../../../../include/c++/10.2.0/backward"/>
@@ -135,6 +137,56 @@
 					<DistClean command="/usr/bin/make -j4 -f &quot;/home/user/Documents/C++/Scop/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
+			<Target title="glad">
+				<Option output="/home/user/Documents/C++/Scop/libs/libglad.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/user/Documents/C++/Scop/libs"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="clang"/>
+				<Compiler>
+					<Add option="-DIMGUI_IMPL_OPENGL_LOADER_GLAD"/>
+					<Add directory="/home/user/Documents/C++/Scop/libs/glad/include"/>
+					<Add directory="/usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/10.2.0/../../../../include/c++/10.2.0"/>
+					<Add directory="/usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/10.2.0/../../../../include/c++/10.2.0/x86_64-pc-linux-gnu"/>
+					<Add directory="/usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/10.2.0/../../../../include/c++/10.2.0/backward"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/clang/10.0.1/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/include-fixed"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/user/Documents/C++/Scop/libs/Makefile&quot;  VERBOSE=1 glad"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/user/Documents/C++/Scop/libs/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/user/Documents/C++/Scop/libs/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/user/Documents/C++/Scop/libs/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="glad/fast">
+				<Option output="/home/user/Documents/C++/Scop/libs/libglad.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/user/Documents/C++/Scop/libs"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="clang"/>
+				<Compiler>
+					<Add option="-DIMGUI_IMPL_OPENGL_LOADER_GLAD"/>
+					<Add directory="/home/user/Documents/C++/Scop/libs/glad/include"/>
+					<Add directory="/usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/10.2.0/../../../../include/c++/10.2.0"/>
+					<Add directory="/usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/10.2.0/../../../../include/c++/10.2.0/x86_64-pc-linux-gnu"/>
+					<Add directory="/usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/10.2.0/../../../../include/c++/10.2.0/backward"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/clang/10.0.1/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/include-fixed"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/user/Documents/C++/Scop/libs/Makefile&quot;  VERBOSE=1 glad/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/user/Documents/C++/Scop/libs/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/user/Documents/C++/Scop/libs/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/user/Documents/C++/Scop/libs/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
 			<Target title="uninstall">
 				<Option working_dir="/home/user/Documents/C++/Scop/libs/glfw"/>
 				<Option type="4"/>
@@ -153,6 +205,7 @@
 				<Option compiler="clang"/>
 				<Compiler>
 					<Add option="-D_GLFW_USE_CONFIG_H"/>
+					<Add option="-DIMGUI_IMPL_OPENGL_LOADER_GLAD"/>
 					<Add directory="/home/user/Documents/C++/Scop/libs/glfw/include"/>
 					<Add directory="/home/user/Documents/C++/Scop/libs/glfw/src"/>
 					<Add directory="/usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/10.2.0/../../../../include/c++/10.2.0"/>
@@ -179,6 +232,7 @@
 				<Option compiler="clang"/>
 				<Compiler>
 					<Add option="-D_GLFW_USE_CONFIG_H"/>
+					<Add option="-DIMGUI_IMPL_OPENGL_LOADER_GLAD"/>
 					<Add directory="/home/user/Documents/C++/Scop/libs/glfw/include"/>
 					<Add directory="/home/user/Documents/C++/Scop/libs/glfw/src"/>
 					<Add directory="/usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/10.2.0/../../../../include/c++/10.2.0"/>
@@ -197,9 +251,65 @@
 					<DistClean command="/usr/bin/make -j4 -f &quot;/home/user/Documents/C++/Scop/libs/glfw/src/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
+			<Target title="imgui">
+				<Option output="/home/user/Documents/C++/Scop/libs/imgui/libimgui.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/user/Documents/C++/Scop/libs/imgui"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="clang"/>
+				<Compiler>
+					<Add option="-DIMGUI_IMPL_OPENGL_LOADER_GLAD"/>
+					<Add directory="/home/user/Documents/C++/Scop/libs/glad/include"/>
+					<Add directory="/home/user/Documents/C++/Scop/libs/glfw/include"/>
+					<Add directory="/usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/10.2.0/../../../../include/c++/10.2.0"/>
+					<Add directory="/usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/10.2.0/../../../../include/c++/10.2.0/x86_64-pc-linux-gnu"/>
+					<Add directory="/usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/10.2.0/../../../../include/c++/10.2.0/backward"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/clang/10.0.1/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/include-fixed"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/user/Documents/C++/Scop/libs/imgui/Makefile&quot;  VERBOSE=1 imgui"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/user/Documents/C++/Scop/libs/imgui/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/user/Documents/C++/Scop/libs/imgui/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/user/Documents/C++/Scop/libs/imgui/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="imgui/fast">
+				<Option output="/home/user/Documents/C++/Scop/libs/imgui/libimgui.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/user/Documents/C++/Scop/libs/imgui"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="clang"/>
+				<Compiler>
+					<Add option="-DIMGUI_IMPL_OPENGL_LOADER_GLAD"/>
+					<Add directory="/home/user/Documents/C++/Scop/libs/glad/include"/>
+					<Add directory="/home/user/Documents/C++/Scop/libs/glfw/include"/>
+					<Add directory="/usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/10.2.0/../../../../include/c++/10.2.0"/>
+					<Add directory="/usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/10.2.0/../../../../include/c++/10.2.0/x86_64-pc-linux-gnu"/>
+					<Add directory="/usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/10.2.0/../../../../include/c++/10.2.0/backward"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/clang/10.0.1/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/include-fixed"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/user/Documents/C++/Scop/libs/imgui/Makefile&quot;  VERBOSE=1 imgui/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/user/Documents/C++/Scop/libs/imgui/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/user/Documents/C++/Scop/libs/imgui/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/user/Documents/C++/Scop/libs/imgui/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
 		</Build>
+		<Unit filename="/home/user/Documents/C++/Scop/libs/glad/include/glad/glad.h">
+			<Option target="glad"/>
+		</Unit>
 		<Unit filename="/home/user/Documents/C++/Scop/libs/glad/src/glad.c">
 			<Option target="Scop"/>
+			<Option target="glad"/>
 		</Unit>
 		<Unit filename="/home/user/Documents/C++/Scop/libs/glfw/include/GLFW/glfw3.h">
 			<Option target="glfw"/>
@@ -289,46 +399,51 @@
 			<Option target="glfw"/>
 		</Unit>
 		<Unit filename="/home/user/Documents/C++/Scop/libs/imgui/imconfig.h">
-			<Option target="Scop"/>
+			<Option target="imgui"/>
 		</Unit>
 		<Unit filename="/home/user/Documents/C++/Scop/libs/imgui/imgui.cpp">
 			<Option target="Scop"/>
+			<Option target="imgui"/>
 		</Unit>
 		<Unit filename="/home/user/Documents/C++/Scop/libs/imgui/imgui.h">
-			<Option target="Scop"/>
+			<Option target="imgui"/>
 		</Unit>
 		<Unit filename="/home/user/Documents/C++/Scop/libs/imgui/imgui_demo.cpp">
-			<Option target="Scop"/>
+			<Option target="imgui"/>
 		</Unit>
 		<Unit filename="/home/user/Documents/C++/Scop/libs/imgui/imgui_draw.cpp">
 			<Option target="Scop"/>
+			<Option target="imgui"/>
 		</Unit>
 		<Unit filename="/home/user/Documents/C++/Scop/libs/imgui/imgui_impl_glfw.cpp">
 			<Option target="Scop"/>
+			<Option target="imgui"/>
 		</Unit>
 		<Unit filename="/home/user/Documents/C++/Scop/libs/imgui/imgui_impl_glfw.h">
-			<Option target="Scop"/>
+			<Option target="imgui"/>
 		</Unit>
 		<Unit filename="/home/user/Documents/C++/Scop/libs/imgui/imgui_impl_opengl3.cpp">
 			<Option target="Scop"/>
+			<Option target="imgui"/>
 		</Unit>
 		<Unit filename="/home/user/Documents/C++/Scop/libs/imgui/imgui_impl_opengl3.h">
-			<Option target="Scop"/>
+			<Option target="imgui"/>
 		</Unit>
 		<Unit filename="/home/user/Documents/C++/Scop/libs/imgui/imgui_internal.h">
-			<Option target="Scop"/>
+			<Option target="imgui"/>
 		</Unit>
 		<Unit filename="/home/user/Documents/C++/Scop/libs/imgui/imgui_widgets.cpp">
 			<Option target="Scop"/>
+			<Option target="imgui"/>
 		</Unit>
 		<Unit filename="/home/user/Documents/C++/Scop/libs/imgui/imstb_rectpack.h">
-			<Option target="Scop"/>
+			<Option target="imgui"/>
 		</Unit>
 		<Unit filename="/home/user/Documents/C++/Scop/libs/imgui/imstb_textedit.h">
-			<Option target="Scop"/>
+			<Option target="imgui"/>
 		</Unit>
 		<Unit filename="/home/user/Documents/C++/Scop/libs/imgui/imstb_truetype.h">
-			<Option target="Scop"/>
+			<Option target="imgui"/>
 		</Unit>
 		<Unit filename="/home/user/Documents/C++/Scop/libs/stb_image/stb_image.cpp">
 			<Option target="Scop"/>
@@ -354,6 +469,9 @@
 		<Unit filename="/home/user/Documents/C++/Scop/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
+		<Unit filename="/home/user/Documents/C++/Scop/libs/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\libs\"/>
+		</Unit>
 		<Unit filename="/home/user/Documents/C++/Scop/libs/glfw/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\libs\glfw\"/>
 		</Unit>
@@ -371,6 +489,15 @@
 		</Unit>
 		<Unit filename="/home/user/Documents/C++/Scop/libs/glfw/src/glfw_config.h.in">
 			<Option virtualFolder="CMake Files\libs\glfw\src\"/>
+		</Unit>
+		<Unit filename="/home/user/Documents/C++/Scop/libs/glm/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\libs\glm\"/>
+		</Unit>
+		<Unit filename="/home/user/Documents/C++/Scop/libs/glm/glm/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\libs\glm\glm\"/>
+		</Unit>
+		<Unit filename="/home/user/Documents/C++/Scop/libs/imgui/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\libs\imgui\"/>
 		</Unit>
 	</Project>
 </CodeBlocks_project_file>

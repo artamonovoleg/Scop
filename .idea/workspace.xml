@@ -21,8 +21,10 @@
   <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
     <generated>
       <config projectName="Scop" targetName="glfw" />
-      <config projectName="Scop" targetName="uninstall" />
       <config projectName="Scop" targetName="Scop" />
+      <config projectName="Scop" targetName="glad" />
+      <config projectName="Scop" targetName="imgui" />
+      <config projectName="Scop" targetName="uninstall" />
     </generated>
   </component>
   <component name="CMakeSettings" AUTO_RELOAD="true">
@@ -32,12 +34,66 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bece6dd9-9ab2-4329-a801-5038f072010e" name="Default Changelist" comment="not really important update">
+      <change afterPath="$PROJECT_DIR$/libs/CMakeLists.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gitmodules" beforeDir="false" afterPath="$PROJECT_DIR$/.gitmodules" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeCache.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeFiles/Makefile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeFiles/Makefile.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeFiles/Makefile2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeFiles/Progress/11" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeFiles/Progress/12" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeFiles/Progress/13" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeFiles/Progress/14" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeFiles/Progress/15" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeFiles/Progress/16" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeFiles/Progress/17" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeFiles/Progress/18" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeFiles/Progress/19" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeFiles/Progress/20" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeFiles/Progress/21" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeFiles/Progress/22" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeFiles/Progress/23" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeFiles/Progress/24" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeFiles/Progress/25" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeFiles/Progress/26" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeFiles/Progress/27" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeFiles/Progress/28" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeFiles/Progress/29" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeFiles/Progress/5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeFiles/Progress/7" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeFiles/Progress/8" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeFiles/Progress/count.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeFiles/Scop.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeFiles/Scop.dir/CXX.includecache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeFiles/Scop.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeFiles/Scop.dir/DependInfo.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeFiles/Scop.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeFiles/Scop.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeFiles/Scop.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeFiles/Scop.dir/cmake_clean.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeFiles/Scop.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeFiles/Scop.dir/depend.internal" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeFiles/Scop.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeFiles/Scop.dir/depend.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeFiles/Scop.dir/flags.make" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeFiles/Scop.dir/flags.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeFiles/Scop.dir/libs/imgui/backends/imgui_impl_opengl3.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeFiles/Scop.dir/libs/imgui/imgui.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeFiles/Scop.dir/libs/imgui/imgui.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeFiles/Scop.dir/libs/imgui/imgui_demo.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeFiles/Scop.dir/libs/imgui/imgui_draw.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeFiles/Scop.dir/libs/imgui/imgui_draw.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeFiles/Scop.dir/libs/imgui/imgui_impl_glfw.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeFiles/Scop.dir/libs/imgui/imgui_impl_opengl3.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeFiles/Scop.dir/libs/imgui/imgui_widgets.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeFiles/Scop.dir/libs/imgui/imgui_widgets.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeFiles/Scop.dir/libs/stb_image/stb_image.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeFiles/Scop.dir/libs/stb_image/stb_image.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeFiles/Scop.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeFiles/Scop.dir/link.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeFiles/Scop.dir/main.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeFiles/Scop.dir/main.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeFiles/Scop.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeFiles/Scop.dir/progress.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeFiles/Scop.dir/src/Shader.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeFiles/Scop.dir/src/Shader.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeFiles/Scop.dir/src/Texture.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeFiles/Scop.dir/src/Texture.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeFiles/TargetDirectories.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeFiles/TargetDirectories.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeFiles/clion-log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeFiles/progress.marks" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeFiles/progress.marks" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Scop" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Scop.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/Scop.cbp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/imgui" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake_install.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake_install.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/glad/include/KHR/khrplatform.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/glad/include/glad/glad.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/glad/src/glad.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,25 +118,39 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="cf.first.check.clang-format" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/libs" />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/libs" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/libs/imgui" />
     </key>
   </component>
   <component name="RunManager" selected="CMake Application.Scop">
-    <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true">
-      <method v="2">
-        <option name="CLION.EXTERNAL.BUILD" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="Scop" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Scop" TARGET_NAME="Scop" CONFIG_NAME="Default" RUN_TARGET_PROJECT_NAME="Scop" RUN_TARGET_NAME="Scop">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
+    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="glad" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Scop" TARGET_NAME="glad" CONFIG_NAME="Default">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="glfw" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Scop" TARGET_NAME="glfw" CONFIG_NAME="Default">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="imgui" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Scop" TARGET_NAME="imgui" CONFIG_NAME="Default">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
@@ -97,8 +167,10 @@
     </configuration>
     <list>
       <item itemvalue="CMake Application.Scop" />
+      <item itemvalue="CMake Application.glad" />
       <item itemvalue="CMake Application.uninstall" />
       <item itemvalue="CMake Application.glfw" />
+      <item itemvalue="CMake Application.imgui" />
     </list>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -112,7 +184,8 @@
       <workItem from="1605776819704" duration="549000" />
       <workItem from="1605777633823" duration="5908000" />
       <workItem from="1605814589153" duration="13734000" />
-      <workItem from="1605862028013" duration="2060000" />
+      <workItem from="1605862028013" duration="9404000" />
+      <workItem from="1605896258123" duration="2791000" />
     </task>
     <task id="LOCAL-00001" summary="ok">
       <created>1605777033669</created>
@@ -163,7 +236,14 @@
       <option name="project" value="LOCAL" />
       <updated>1605862065521</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="not really important update">
+      <created>1605864293036</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1605864293036</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -193,26 +273,26 @@
       <screen x="0" y="0" width="1920" height="1043" />
     </state>
     <state x="688" y="324" width="537" height="396" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1043@0.0.1920.1043" timestamp="1605777992317" />
-    <state width="397" height="300" key="Git.Branch.Popup" timestamp="1605862074093">
+    <state width="399" height="302" key="Git.Branch.Popup" timestamp="1605864299123">
       <screen x="0" y="0" width="1920" height="1043" />
     </state>
-    <state width="397" height="300" key="Git.Branch.Popup/0.0.1920.1043@0.0.1920.1043" timestamp="1605862074093" />
-    <state width="1874" height="2" key="GridCell.Tab.0.bottom" timestamp="1605831478070">
+    <state width="399" height="302" key="Git.Branch.Popup/0.0.1920.1043@0.0.1920.1043" timestamp="1605864299123" />
+    <state width="1874" height="78" key="GridCell.Tab.0.bottom" timestamp="1605899049145">
       <screen x="0" y="0" width="1920" height="1043" />
     </state>
-    <state width="1874" height="2" key="GridCell.Tab.0.bottom/0.0.1920.1043@0.0.1920.1043" timestamp="1605831478070" />
-    <state width="1874" height="2" key="GridCell.Tab.0.center" timestamp="1605831478069">
+    <state width="1874" height="78" key="GridCell.Tab.0.bottom/0.0.1920.1043@0.0.1920.1043" timestamp="1605899049145" />
+    <state width="1874" height="78" key="GridCell.Tab.0.center" timestamp="1605899049144">
       <screen x="0" y="0" width="1920" height="1043" />
     </state>
-    <state width="1874" height="2" key="GridCell.Tab.0.center/0.0.1920.1043@0.0.1920.1043" timestamp="1605831478069" />
-    <state width="1874" height="2" key="GridCell.Tab.0.left" timestamp="1605831478068">
+    <state width="1874" height="78" key="GridCell.Tab.0.center/0.0.1920.1043@0.0.1920.1043" timestamp="1605899049144" />
+    <state width="1874" height="78" key="GridCell.Tab.0.left" timestamp="1605899049144">
       <screen x="0" y="0" width="1920" height="1043" />
     </state>
-    <state width="1874" height="2" key="GridCell.Tab.0.left/0.0.1920.1043@0.0.1920.1043" timestamp="1605831478068" />
-    <state width="1874" height="2" key="GridCell.Tab.0.right" timestamp="1605831478069">
+    <state width="1874" height="78" key="GridCell.Tab.0.left/0.0.1920.1043@0.0.1920.1043" timestamp="1605899049144" />
+    <state width="1874" height="78" key="GridCell.Tab.0.right" timestamp="1605899049145">
       <screen x="0" y="0" width="1920" height="1043" />
     </state>
-    <state width="1874" height="2" key="GridCell.Tab.0.right/0.0.1920.1043@0.0.1920.1043" timestamp="1605831478069" />
+    <state width="1874" height="78" key="GridCell.Tab.0.right/0.0.1920.1043@0.0.1920.1043" timestamp="1605899049145" />
     <state width="1874" height="2" key="GridCell.Tab.1.bottom" timestamp="1605831478071">
       <screen x="0" y="0" width="1920" height="1043" />
     </state>
@@ -229,9 +309,9 @@
       <screen x="0" y="0" width="1920" height="1043" />
     </state>
     <state width="1874" height="2" key="GridCell.Tab.1.right/0.0.1920.1043@0.0.1920.1043" timestamp="1605831478071" />
-    <state x="555" y="258" width="804" height="528" key="Vcs.Push.Dialog.v2" timestamp="1605862075454">
+    <state x="555" y="258" width="804" height="528" key="Vcs.Push.Dialog.v2" timestamp="1605864300237">
       <screen x="0" y="0" width="1920" height="1043" />
     </state>
-    <state x="555" y="258" width="804" height="528" key="Vcs.Push.Dialog.v2/0.0.1920.1043@0.0.1920.1043" timestamp="1605862075454" />
+    <state x="555" y="258" width="804" height="528" key="Vcs.Push.Dialog.v2/0.0.1920.1043@0.0.1920.1043" timestamp="1605864300237" />
   </component>
 </project>

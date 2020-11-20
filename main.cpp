@@ -8,6 +8,9 @@
 #include "src/OBJLoader.hpp"
 #include "src/Camera.hpp"
 
+#include "imgui.h"
+#include "imgui_impl_glfw.h"
+#include "imgui_impl_opengl3.h"
 
 void processInput(GLFWwindow *window, Camera& camera, float deltaTime);
 void mouse_callback(GLFWwindow* window, double xpos, double ypos);
@@ -98,6 +101,8 @@ class VertexBuffersLayout
         }
 };
 
+ImGuiIO* imgio = nullptr;
+
 int main()
 {
     GLFWwindow* window = nullptr;
@@ -115,13 +120,20 @@ int main()
     glfwMakeContextCurrent(window);
 
     // tell GLFW to capture our mouse
-    glfwSetInputMode(window, GLFW_CURSOR, GLFW_CURSOR_DISABLED);
+//    glfwSetInputMode(window, GLFW_CURSOR, GLFW_CURSOR_DISABLED);
     glfwSetCursorPosCallback(window, mouse_callback);
     // glad: load all OpenGL function pointers
     if (!gladLoadGLLoader((GLADloadproc)glfwGetProcAddress))
         std::cerr << "Failed to initialize GLAD" << std::endl;
 
     glViewport(0, 0, 800, 600);
+//------------------------------------------ImGUI---------------------------------------------------------------------//
+    ImGui::CreateContext();
+    ImGuiIO& io = ImGui::GetIO(); (void)io;
+    imgio = &io;
+    ImGui::StyleColorsDark();
+    ImGui_ImplGlfw_InitForOpenGL(window, true);
+    ImGui_ImplOpenGL3_Init((char *)glGetString(GL_NUM_SHADING_LANGUAGE_VERSIONS));
 //-----------------------------------Create render objects------------------------------------------------------------//
 
     /* TODO:
@@ -130,24 +142,15 @@ int main()
     */
 
     // load model
-    Mesh mesh = loader.LoadFromFile("res/objs/spheres1.obj");
+    Mesh mesh = loader.LoadFromFile("res/objs/diablo.obj");
     // load model to buffers
-    unsigned int vao, vbo, ebo;
+    unsigned int ebo;
     VertexArray va;
     va.Bind();
     VertexBuffer<Vertex> vb(mesh.m_Vertices.data(), mesh.m_Vertices.size());
     vb.Bind();
-//    VertexBuffer<unsigned int> eb(mesh.m_Indices.data(), mesh.m_Indices.size());
-//    eb.Bind();
 
-//    glGenVertexArrays(1, &vao);
-//    glGenBuffers(1, &vbo);
     glGenBuffers(1, &ebo);
-//
-//    glBindVertexArray(vao);
-//    glBindBuffer(GL_ARRAY_BUFFER, vbo);
-//
-//    glBufferData(GL_ARRAY_BUFFER, mesh.m_Vertices.size() * sizeof(Vertex), mesh.m_Vertices.data(), GL_STATIC_DRAW);
     glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, ebo);
     glBufferData(GL_ELEMENT_ARRAY_BUFFER, mesh.m_Indices.size() * sizeof(unsigned int), mesh.m_Indices.data(), GL_STATIC_DRAW);
 
@@ -155,29 +158,22 @@ int main()
     layout.Push<float>(3, 8, 0);
     layout.Push<float>(2, 8, 3);
     layout.Push<float>(3, 8, 5);
-//    // positions
-//    glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 8 * sizeof(float), nullptr);
-//    glEnableVertexAttribArray(0);
-//    // textures
-//    glVertexAttribPointer(1, 2, GL_FLOAT, GL_FALSE, 8 * sizeof(float), (void*)(3 * sizeof(float)));
-//    glEnableVertexAttribArray(1);
-//    // normals
-//    glVertexAttribPointer(2, 3, GL_FLOAT, GL_FALSE, 8 * sizeof(float), (void*)(5 * sizeof(float)));
-//    glEnableVertexAttribArray(2);
 
     glEnable(GL_DEPTH_TEST);
 
     {
         // class objects need to call their destructor earlier then glfw terminates
         Shader shader("res/shaders/vshader.vert", "res/shaders/fshader.frag");
-        Texture texture("res/textures/crate_1.jpg");
-//--------------------------Light setup-------------------------------------------------------------------------------//
-        glm::vec3 lightColor(1.0f, 1.0f, 1.0f);
-        glm::vec3 diffuseColor = lightColor * glm::vec3(0.9f);
-        glm::vec3 ambientColor = diffuseColor * glm::vec3(0.9f);
+        Texture texture("res/textures/diablo3_pose_diffuse.tga");
+
 //[*}--------------------------------Application loop---------------------------------------------------------------[*]//
         while (!glfwWindowShouldClose(window))
         {
+            static float lightColorArray[4] = { 1.0f, 1.0f, 1.0f, 1.0f };
+            glm::vec3 lightColor(lightColorArray[0], lightColorArray[1], lightColorArray[2]);
+            glm::vec3 diffuseColor = lightColor * glm::vec3(0.9f);
+            glm::vec3 ambientColor = diffuseColor * glm::vec3(0.9f);
+
             // per-frame time logic
             auto currentFrame = static_cast<float>(glfwGetTime());
             deltaTime = currentFrame - lastFrame;
@@ -217,6 +213,19 @@ int main()
 //            glBindVertexArray(vao);
             va.Bind();
             glDrawElements(GL_TRIANGLES, mesh.m_Indices.size(), GL_UNSIGNED_INT, nullptr);
+
+            ImGui_ImplOpenGL3_NewFrame();
+            ImGui_ImplGlfw_NewFrame();
+            ImGui::NewFrame();
+
+            // render your GUI
+            ImGui::Begin("Gui");
+            ImGui::ColorEdit3("Light", lightColorArray);
+            ImGui::End();
+
+            // Rendering
+            ImGui::Render();
+            ImGui_ImplOpenGL3_RenderDrawData(ImGui::GetDrawData());
 //-----------------------------Every frame logic----------------------------------------------------------------------//
             glfwSwapBuffers(window);
             glfwPollEvents();
@@ -224,6 +233,9 @@ int main()
         }
 //[*]---------------------------------------------------------------------------------------------------------------[*]//
     }
+    ImGui_ImplOpenGL3_Shutdown();
+    ImGui_ImplGlfw_Shutdown();
+    ImGui::DestroyContext();
     glfwDestroyWindow(window);
     glfwTerminate();
 }
@@ -264,5 +276,6 @@ void mouse_callback(GLFWwindow* window, double xpos, double ypos)
     lastX = xpos;
     lastY = ypos;
 
-    camera.ProcessMouseMovement(xoffset, yoffset);
+    if (!(imgio->WantCaptureMouse))
+        camera.ProcessMouseMovement(xoffset, yoffset);
 }

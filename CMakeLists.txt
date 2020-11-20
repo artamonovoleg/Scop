@@ -15,35 +15,33 @@ set(GLFW_BUILD_DOCS OFF CACHE BOOL "" FORCE)
 set(GLFW_BUILD_TESTS OFF CACHE BOOL "" FORCE)
 set(GLFW_BUILD_EXAMPLES OFF CACHE BOOL "" FORCE)
 
-add_subdirectory(${CMAKE_CURRENT_SOURCE_DIR}/libs/glfw/)
+add_definitions(-pthread )
+add_definitions(-DIMGUI_IMPL_OPENGL_LOADER_GLAD)
 
-# set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/..)
+set(GLM_INCLUDE_DIR libs/glm)
+set(GLFW_INCLUDE_DIR libs/glfw/include)
+set(IMGUI_INCLUDE_DIR libs/imgui)
+set(GLAD_INCLUDE_DIR libs/glad/include)
+set(STB_IMAGE_DIR libs/stb_image)
+
+add_subdirectory(libs)
+
 set(INCLUDES    libs/glad/include
                 libs/glfw/include
                 libs/glm
                 libs/stb_image
-                libs/imgui
-                libs/imgui/backends)
+                libs/imgui/backends
+                libs/imgui)
 
 set(SRCS    libs/glad/src/glad.c
             libs/stb_image/stb_image.cpp
+            libs/imgui/imgui_impl_glfw.cpp
+            libs/imgui/imgui_impl_opengl3.cpp
+            libs/imgui/imgui_widgets.cpp
+            libs/imgui/imgui_draw.cpp
+            libs/imgui/imgui.cpp
             src/Shader.cpp
             src/Texture.cpp
-
-        libs/imgui/imconfig.h
-        libs/imgui/imgui_demo.cpp
-        libs/imgui/imgui_draw.cpp
-        libs/imgui/imgui_impl_glfw.cpp
-        libs/imgui/imgui_impl_glfw.h
-        libs/imgui/imgui_impl_opengl3.cpp
-        libs/imgui/imgui_impl_opengl3.h
-        libs/imgui/imgui_internal.h
-        libs/imgui/imgui_widgets.cpp
-        libs/imgui/imgui.cpp
-        libs/imgui/imgui.h
-        libs/imgui/imstb_rectpack.h
-        libs/imgui/imstb_textedit.h
-        libs/imgui/imstb_truetype.h
             main.cpp)
 
 include_directories(${INCLUDES})

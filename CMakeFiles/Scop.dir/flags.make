@@ -3,15 +3,15 @@
 
 # compile C with /usr/bin/cc
 # compile CXX with /usr/bin/clang++
-C_FLAGS =   -g -Wall
+C_FLAGS =   -pthread -g -Wall
 
-C_DEFINES = 
+C_DEFINES = -DIMGUI_IMPL_OPENGL_LOADER_GLAD
 
-C_INCLUDES = -I/home/user/Documents/C++/Scop/libs/glad/include -I/home/user/Documents/C++/Scop/libs/glfw/include -I/home/user/Documents/C++/Scop/libs/glm -I/home/user/Documents/C++/Scop/libs/stb_image -I/home/user/Documents/C++/Scop/libs/imgui -I/home/user/Documents/C++/Scop/libs/imgui/backends 
+C_INCLUDES = -I/home/user/Documents/C++/Scop/libs/glad/include -I/home/user/Documents/C++/Scop/libs/glfw/include -I/home/user/Documents/C++/Scop/libs/glm -I/home/user/Documents/C++/Scop/libs/stb_image -I/home/user/Documents/C++/Scop/libs/imgui/backends -I/home/user/Documents/C++/Scop/libs/imgui 
 
-CXX_FLAGS =   -g -Wall -std=gnu++17
+CXX_FLAGS =   -pthread -g -Wall -std=gnu++17
 
-CXX_DEFINES = 
+CXX_DEFINES = -DIMGUI_IMPL_OPENGL_LOADER_GLAD
 
-CXX_INCLUDES = -I/home/user/Documents/C++/Scop/libs/glad/include -I/home/user/Documents/C++/Scop/libs/glfw/include -I/home/user/Documents/C++/Scop/libs/glm -I/home/user/Documents/C++/Scop/libs/stb_image -I/home/user/Documents/C++/Scop/libs/imgui -I/home/user/Documents/C++/Scop/libs/imgui/backends 
+CXX_INCLUDES = -I/home/user/Documents/C++/Scop/libs/glad/include -I/home/user/Documents/C++/Scop/libs/glfw/include -I/home/user/Documents/C++/Scop/libs/glm -I/home/user/Documents/C++/Scop/libs/stb_image -I/home/user/Documents/C++/Scop/libs/imgui/backends -I/home/user/Documents/C++/Scop/libs/imgui 
 

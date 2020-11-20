@@ -9,18 +9,22 @@ set(CMAKE_DEPENDS_CHECK_C
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 
+# Preprocessor definitions for this target.
+set(CMAKE_TARGET_DEFINITIONS_C
+  "IMGUI_IMPL_OPENGL_LOADER_GLAD"
+  )
+
 # The include file search paths:
 set(CMAKE_C_TARGET_INCLUDE_PATH
   "libs/glad/include"
   "libs/glfw/include"
   "libs/glm"
   "libs/stb_image"
-  "libs/imgui"
   "libs/imgui/backends"
+  "libs/imgui"
   )
 set(CMAKE_DEPENDS_CHECK_CXX
   "/home/user/Documents/C++/Scop/libs/imgui/imgui.cpp" "/home/user/Documents/C++/Scop/CMakeFiles/Scop.dir/libs/imgui/imgui.cpp.o"
-  "/home/user/Documents/C++/Scop/libs/imgui/imgui_demo.cpp" "/home/user/Documents/C++/Scop/CMakeFiles/Scop.dir/libs/imgui/imgui_demo.cpp.o"
   "/home/user/Documents/C++/Scop/libs/imgui/imgui_draw.cpp" "/home/user/Documents/C++/Scop/CMakeFiles/Scop.dir/libs/imgui/imgui_draw.cpp.o"
   "/home/user/Documents/C++/Scop/libs/imgui/imgui_impl_glfw.cpp" "/home/user/Documents/C++/Scop/CMakeFiles/Scop.dir/libs/imgui/imgui_impl_glfw.cpp.o"
   "/home/user/Documents/C++/Scop/libs/imgui/imgui_impl_opengl3.cpp" "/home/user/Documents/C++/Scop/CMakeFiles/Scop.dir/libs/imgui/imgui_impl_opengl3.cpp.o"
@@ -32,14 +36,19 @@ set(CMAKE_DEPENDS_CHECK_CXX
   )
 set(CMAKE_CXX_COMPILER_ID "Clang")
 
+# Preprocessor definitions for this target.
+set(CMAKE_TARGET_DEFINITIONS_CXX
+  "IMGUI_IMPL_OPENGL_LOADER_GLAD"
+  )
+
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "libs/glad/include"
   "libs/glfw/include"
   "libs/glm"
   "libs/stb_image"
-  "libs/imgui"
   "libs/imgui/backends"
+  "libs/imgui"
   )
 
 # Targets to which this target links.

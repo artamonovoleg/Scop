@@ -52,12 +52,16 @@ set(CMAKE_MAKEFILE_DEPENDS
   "CMakeFiles/3.17.3/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.17.3/CMakeSystem.cmake"
   "CMakeLists.txt"
+  "libs/CMakeLists.txt"
   "libs/glfw/CMake/cmake_uninstall.cmake.in"
   "libs/glfw/CMake/glfw3.pc.in"
   "libs/glfw/CMake/glfw3Config.cmake.in"
   "libs/glfw/CMakeLists.txt"
   "libs/glfw/src/CMakeLists.txt"
   "libs/glfw/src/glfw_config.h.in"
+  "libs/glm/CMakeLists.txt"
+  "libs/glm/glm/CMakeLists.txt"
+  "libs/imgui/CMakeLists.txt"
   )
 
 # The corresponding makefile is:
@@ -69,13 +73,19 @@ set(CMAKE_MAKEFILE_OUTPUTS
 # Byproducts of CMake generate step:
 set(CMAKE_MAKEFILE_PRODUCTS
   "CMakeFiles/CMakeDirectoryInformation.cmake"
+  "libs/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "libs/glm/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "libs/glm/glm/CMakeFiles/CMakeDirectoryInformation.cmake"
   "libs/glfw/CMakeFiles/CMakeDirectoryInformation.cmake"
   "libs/glfw/src/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "libs/imgui/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/Scop.dir/DependInfo.cmake"
+  "libs/CMakeFiles/glad.dir/DependInfo.cmake"
   "libs/glfw/CMakeFiles/uninstall.dir/DependInfo.cmake"
   "libs/glfw/src/CMakeFiles/glfw.dir/DependInfo.cmake"
+  "libs/imgui/CMakeFiles/imgui.dir/DependInfo.cmake"
   )
