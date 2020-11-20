@@ -33,67 +33,8 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bece6dd9-9ab2-4329-a801-5038f072010e" name="Default Changelist" comment="not really important update">
-      <change afterPath="$PROJECT_DIR$/libs/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitmodules" beforeDir="false" afterPath="$PROJECT_DIR$/.gitmodules" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeCache.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeFiles/Makefile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeFiles/Makefile.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeFiles/Makefile2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeFiles/Progress/11" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeFiles/Progress/12" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeFiles/Progress/13" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeFiles/Progress/14" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeFiles/Progress/15" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeFiles/Progress/16" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeFiles/Progress/17" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeFiles/Progress/18" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeFiles/Progress/19" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeFiles/Progress/20" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeFiles/Progress/21" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeFiles/Progress/22" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeFiles/Progress/23" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeFiles/Progress/24" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeFiles/Progress/25" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeFiles/Progress/26" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeFiles/Progress/27" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeFiles/Progress/28" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeFiles/Progress/29" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeFiles/Progress/5" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeFiles/Progress/7" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeFiles/Progress/8" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeFiles/Progress/count.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeFiles/Scop.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeFiles/Scop.dir/CXX.includecache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeFiles/Scop.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeFiles/Scop.dir/DependInfo.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeFiles/Scop.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeFiles/Scop.dir/build.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeFiles/Scop.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeFiles/Scop.dir/cmake_clean.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeFiles/Scop.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeFiles/Scop.dir/depend.internal" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeFiles/Scop.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeFiles/Scop.dir/depend.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeFiles/Scop.dir/flags.make" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeFiles/Scop.dir/flags.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeFiles/Scop.dir/libs/imgui/backends/imgui_impl_opengl3.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeFiles/Scop.dir/libs/imgui/imgui.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeFiles/Scop.dir/libs/imgui/imgui.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeFiles/Scop.dir/libs/imgui/imgui_demo.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeFiles/Scop.dir/libs/imgui/imgui_draw.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeFiles/Scop.dir/libs/imgui/imgui_draw.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeFiles/Scop.dir/libs/imgui/imgui_impl_glfw.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeFiles/Scop.dir/libs/imgui/imgui_impl_opengl3.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeFiles/Scop.dir/libs/imgui/imgui_widgets.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeFiles/Scop.dir/libs/imgui/imgui_widgets.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeFiles/Scop.dir/libs/stb_image/stb_image.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeFiles/Scop.dir/libs/stb_image/stb_image.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeFiles/Scop.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeFiles/Scop.dir/link.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeFiles/Scop.dir/main.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeFiles/Scop.dir/main.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeFiles/Scop.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeFiles/Scop.dir/progress.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeFiles/Scop.dir/src/Shader.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeFiles/Scop.dir/src/Shader.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeFiles/Scop.dir/src/Texture.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeFiles/Scop.dir/src/Texture.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeFiles/TargetDirectories.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeFiles/TargetDirectories.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeFiles/clion-log.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeFiles/progress.marks" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeFiles/progress.marks" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Scop.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/Scop.cbp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake_install.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake_install.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/glad/include/KHR/khrplatform.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/glad/include/glad/glad.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/glad/src/glad.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
+    <list default="true" id="bece6dd9-9ab2-4329-a801-5038f072010e" name="Default Changelist" comment="Gui test">
+      <change beforePath="$PROJECT_DIR$/libs/glfw" beforeDir="false" afterPath="$PROJECT_DIR$/libs/glfw" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -185,7 +126,7 @@
       <workItem from="1605777633823" duration="5908000" />
       <workItem from="1605814589153" duration="13734000" />
       <workItem from="1605862028013" duration="9404000" />
-      <workItem from="1605896258123" duration="2791000" />
+      <workItem from="1605896258123" duration="3107000" />
     </task>
     <task id="LOCAL-00001" summary="ok">
       <created>1605777033669</created>
@@ -243,7 +184,21 @@
       <option name="project" value="LOCAL" />
       <updated>1605864293036</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Gui test">
+      <created>1605899339866</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1605899339866</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Gui test">
+      <created>1605899353643</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1605899353643</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -266,17 +221,18 @@
     <MESSAGE value="Write light part in shader" />
     <MESSAGE value="ready to load materials&#10;need to parse file" />
     <MESSAGE value="not really important update" />
-    <option name="LAST_COMMIT_MESSAGE" value="not really important update" />
+    <MESSAGE value="Gui test" />
+    <option name="LAST_COMMIT_MESSAGE" value="Gui test" />
   </component>
   <component name="WindowStateProjectService">
     <state x="688" y="324" width="537" height="396" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1605777992317">
       <screen x="0" y="0" width="1920" height="1043" />
     </state>
     <state x="688" y="324" width="537" height="396" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1043@0.0.1920.1043" timestamp="1605777992317" />
-    <state width="399" height="302" key="Git.Branch.Popup" timestamp="1605864299123">
+    <state width="401" height="304" key="Git.Branch.Popup" timestamp="1605899363809">
       <screen x="0" y="0" width="1920" height="1043" />
     </state>
-    <state width="399" height="302" key="Git.Branch.Popup/0.0.1920.1043@0.0.1920.1043" timestamp="1605864299123" />
+    <state width="401" height="304" key="Git.Branch.Popup/0.0.1920.1043@0.0.1920.1043" timestamp="1605899363809" />
     <state width="1874" height="78" key="GridCell.Tab.0.bottom" timestamp="1605899049145">
       <screen x="0" y="0" width="1920" height="1043" />
     </state>
@@ -309,9 +265,9 @@
       <screen x="0" y="0" width="1920" height="1043" />
     </state>
     <state width="1874" height="2" key="GridCell.Tab.1.right/0.0.1920.1043@0.0.1920.1043" timestamp="1605831478071" />
-    <state x="555" y="258" width="804" height="528" key="Vcs.Push.Dialog.v2" timestamp="1605864300237">
+    <state x="555" y="258" width="804" height="528" key="Vcs.Push.Dialog.v2" timestamp="1605899365976">
       <screen x="0" y="0" width="1920" height="1043" />
     </state>
-    <state x="555" y="258" width="804" height="528" key="Vcs.Push.Dialog.v2/0.0.1920.1043@0.0.1920.1043" timestamp="1605864300237" />
+    <state x="555" y="258" width="804" height="528" key="Vcs.Push.Dialog.v2/0.0.1920.1043@0.0.1920.1043" timestamp="1605899365976" />
   </component>
 </project>
