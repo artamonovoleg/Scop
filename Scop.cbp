@@ -451,9 +451,6 @@
 		<Unit filename="/home/user/Documents/C++/Scop/libs/stb_image/stb_image.h">
 			<Option target="Scop"/>
 		</Unit>
-		<Unit filename="/home/user/Documents/C++/Scop/main.cpp">
-			<Option target="Scop"/>
-		</Unit>
 		<Unit filename="/home/user/Documents/C++/Scop/src/Shader.cpp">
 			<Option target="Scop"/>
 		</Unit>
@@ -464,6 +461,9 @@
 			<Option target="Scop"/>
 		</Unit>
 		<Unit filename="/home/user/Documents/C++/Scop/src/Texture.hpp">
+			<Option target="Scop"/>
+		</Unit>
+		<Unit filename="/home/user/Documents/C++/Scop/src/main.cpp">
 			<Option target="Scop"/>
 		</Unit>
 		<Unit filename="/home/user/Documents/C++/Scop/CMakeLists.txt">

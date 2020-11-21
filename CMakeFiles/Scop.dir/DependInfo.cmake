@@ -30,9 +30,9 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/home/user/Documents/C++/Scop/libs/imgui/imgui_impl_opengl3.cpp" "/home/user/Documents/C++/Scop/CMakeFiles/Scop.dir/libs/imgui/imgui_impl_opengl3.cpp.o"
   "/home/user/Documents/C++/Scop/libs/imgui/imgui_widgets.cpp" "/home/user/Documents/C++/Scop/CMakeFiles/Scop.dir/libs/imgui/imgui_widgets.cpp.o"
   "/home/user/Documents/C++/Scop/libs/stb_image/stb_image.cpp" "/home/user/Documents/C++/Scop/CMakeFiles/Scop.dir/libs/stb_image/stb_image.cpp.o"
-  "/home/user/Documents/C++/Scop/main.cpp" "/home/user/Documents/C++/Scop/CMakeFiles/Scop.dir/main.cpp.o"
   "/home/user/Documents/C++/Scop/src/Shader.cpp" "/home/user/Documents/C++/Scop/CMakeFiles/Scop.dir/src/Shader.cpp.o"
   "/home/user/Documents/C++/Scop/src/Texture.cpp" "/home/user/Documents/C++/Scop/CMakeFiles/Scop.dir/src/Texture.cpp.o"
+  "/home/user/Documents/C++/Scop/src/main.cpp" "/home/user/Documents/C++/Scop/CMakeFiles/Scop.dir/src/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "Clang")
 

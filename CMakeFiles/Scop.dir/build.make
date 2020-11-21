@@ -194,18 +194,18 @@ CMakeFiles/Scop.dir/src/Texture.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Scop.dir/src/Texture.cpp.s"
 	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/user/Documents/C++/Scop/src/Texture.cpp -o CMakeFiles/Scop.dir/src/Texture.cpp.s
 
-CMakeFiles/Scop.dir/main.cpp.o: CMakeFiles/Scop.dir/flags.make
-CMakeFiles/Scop.dir/main.cpp.o: main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/Documents/C++/Scop/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/Scop.dir/main.cpp.o"
-	/usr/bin/clang++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Scop.dir/main.cpp.o -c /home/user/Documents/C++/Scop/main.cpp
+CMakeFiles/Scop.dir/src/main.cpp.o: CMakeFiles/Scop.dir/flags.make
+CMakeFiles/Scop.dir/src/main.cpp.o: src/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/Documents/C++/Scop/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/Scop.dir/src/main.cpp.o"
+	/usr/bin/clang++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Scop.dir/src/main.cpp.o -c /home/user/Documents/C++/Scop/src/main.cpp
 
-CMakeFiles/Scop.dir/main.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Scop.dir/main.cpp.i"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/user/Documents/C++/Scop/main.cpp > CMakeFiles/Scop.dir/main.cpp.i
+CMakeFiles/Scop.dir/src/main.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Scop.dir/src/main.cpp.i"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/user/Documents/C++/Scop/src/main.cpp > CMakeFiles/Scop.dir/src/main.cpp.i
 
-CMakeFiles/Scop.dir/main.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Scop.dir/main.cpp.s"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/user/Documents/C++/Scop/main.cpp -o CMakeFiles/Scop.dir/main.cpp.s
+CMakeFiles/Scop.dir/src/main.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Scop.dir/src/main.cpp.s"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/user/Documents/C++/Scop/src/main.cpp -o CMakeFiles/Scop.dir/src/main.cpp.s
 
 # Object files for target Scop
 Scop_OBJECTS = \
@@ -218,7 +218,7 @@ Scop_OBJECTS = \
 "CMakeFiles/Scop.dir/libs/imgui/imgui.cpp.o" \
 "CMakeFiles/Scop.dir/src/Shader.cpp.o" \
 "CMakeFiles/Scop.dir/src/Texture.cpp.o" \
-"CMakeFiles/Scop.dir/main.cpp.o"
+"CMakeFiles/Scop.dir/src/main.cpp.o"
 
 # External object files for target Scop
 Scop_EXTERNAL_OBJECTS =
@@ -232,7 +232,7 @@ Scop: CMakeFiles/Scop.dir/libs/imgui/imgui_draw.cpp.o
 Scop: CMakeFiles/Scop.dir/libs/imgui/imgui.cpp.o
 Scop: CMakeFiles/Scop.dir/src/Shader.cpp.o
 Scop: CMakeFiles/Scop.dir/src/Texture.cpp.o
-Scop: CMakeFiles/Scop.dir/main.cpp.o
+Scop: CMakeFiles/Scop.dir/src/main.cpp.o
 Scop: CMakeFiles/Scop.dir/build.make
 Scop: libs/glfw/src/libglfw3.a
 Scop: /usr/lib/librt.so

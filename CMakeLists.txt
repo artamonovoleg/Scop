@@ -15,7 +15,6 @@ set(GLFW_BUILD_DOCS OFF CACHE BOOL "" FORCE)
 set(GLFW_BUILD_TESTS OFF CACHE BOOL "" FORCE)
 set(GLFW_BUILD_EXAMPLES OFF CACHE BOOL "" FORCE)
 
-add_definitions(-pthread )
 add_definitions(-DIMGUI_IMPL_OPENGL_LOADER_GLAD)
 
 set(GLM_INCLUDE_DIR libs/glm)
@@ -42,7 +41,7 @@ set(SRCS    libs/glad/src/glad.c
             libs/imgui/imgui.cpp
             src/Shader.cpp
             src/Texture.cpp
-            main.cpp)
+            src/main.cpp)
 
 include_directories(${INCLUDES})
 

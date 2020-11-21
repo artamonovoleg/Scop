@@ -1,0 +1,167 @@
+[
+{
+  "directory": "/home/user/Documents/C++/Scop/build",
+  "command": "/bin/gcc -DIMGUI_IMPL_OPENGL_LOADER_GLAD -I/home/user/Documents/C++/Scop/libs/glad/include -I/home/user/Documents/C++/Scop/libs/glfw/include -I/home/user/Documents/C++/Scop/libs/glm -I/home/user/Documents/C++/Scop/libs/stb_image -I/home/user/Documents/C++/Scop/libs/imgui/backends -I/home/user/Documents/C++/Scop/libs/imgui -g -g -Wall -o CMakeFiles/Scop.dir/libs/glad/src/glad.c.o -c /home/user/Documents/C++/Scop/libs/glad/src/glad.c",
+  "file": "/home/user/Documents/C++/Scop/libs/glad/src/glad.c"
+},
+{
+  "directory": "/home/user/Documents/C++/Scop/build",
+  "command": "/bin/g++ -DIMGUI_IMPL_OPENGL_LOADER_GLAD -I/home/user/Documents/C++/Scop/libs/glad/include -I/home/user/Documents/C++/Scop/libs/glfw/include -I/home/user/Documents/C++/Scop/libs/glm -I/home/user/Documents/C++/Scop/libs/stb_image -I/home/user/Documents/C++/Scop/libs/imgui/backends -I/home/user/Documents/C++/Scop/libs/imgui -g -g -Wall -std=gnu++17 -o CMakeFiles/Scop.dir/libs/stb_image/stb_image.cpp.o -c /home/user/Documents/C++/Scop/libs/stb_image/stb_image.cpp",
+  "file": "/home/user/Documents/C++/Scop/libs/stb_image/stb_image.cpp"
+},
+{
+  "directory": "/home/user/Documents/C++/Scop/build",
+  "command": "/bin/g++ -DIMGUI_IMPL_OPENGL_LOADER_GLAD -I/home/user/Documents/C++/Scop/libs/glad/include -I/home/user/Documents/C++/Scop/libs/glfw/include -I/home/user/Documents/C++/Scop/libs/glm -I/home/user/Documents/C++/Scop/libs/stb_image -I/home/user/Documents/C++/Scop/libs/imgui/backends -I/home/user/Documents/C++/Scop/libs/imgui -g -g -Wall -std=gnu++17 -o CMakeFiles/Scop.dir/libs/imgui/imgui_impl_glfw.cpp.o -c /home/user/Documents/C++/Scop/libs/imgui/imgui_impl_glfw.cpp",
+  "file": "/home/user/Documents/C++/Scop/libs/imgui/imgui_impl_glfw.cpp"
+},
+{
+  "directory": "/home/user/Documents/C++/Scop/build",
+  "command": "/bin/g++ -DIMGUI_IMPL_OPENGL_LOADER_GLAD -I/home/user/Documents/C++/Scop/libs/glad/include -I/home/user/Documents/C++/Scop/libs/glfw/include -I/home/user/Documents/C++/Scop/libs/glm -I/home/user/Documents/C++/Scop/libs/stb_image -I/home/user/Documents/C++/Scop/libs/imgui/backends -I/home/user/Documents/C++/Scop/libs/imgui -g -g -Wall -std=gnu++17 -o CMakeFiles/Scop.dir/libs/imgui/imgui_impl_opengl3.cpp.o -c /home/user/Documents/C++/Scop/libs/imgui/imgui_impl_opengl3.cpp",
+  "file": "/home/user/Documents/C++/Scop/libs/imgui/imgui_impl_opengl3.cpp"
+},
+{
+  "directory": "/home/user/Documents/C++/Scop/build",
+  "command": "/bin/g++ -DIMGUI_IMPL_OPENGL_LOADER_GLAD -I/home/user/Documents/C++/Scop/libs/glad/include -I/home/user/Documents/C++/Scop/libs/glfw/include -I/home/user/Documents/C++/Scop/libs/glm -I/home/user/Documents/C++/Scop/libs/stb_image -I/home/user/Documents/C++/Scop/libs/imgui/backends -I/home/user/Documents/C++/Scop/libs/imgui -g -g -Wall -std=gnu++17 -o CMakeFiles/Scop.dir/libs/imgui/imgui_widgets.cpp.o -c /home/user/Documents/C++/Scop/libs/imgui/imgui_widgets.cpp",
+  "file": "/home/user/Documents/C++/Scop/libs/imgui/imgui_widgets.cpp"
+},
+{
+  "directory": "/home/user/Documents/C++/Scop/build",
+  "command": "/bin/g++ -DIMGUI_IMPL_OPENGL_LOADER_GLAD -I/home/user/Documents/C++/Scop/libs/glad/include -I/home/user/Documents/C++/Scop/libs/glfw/include -I/home/user/Documents/C++/Scop/libs/glm -I/home/user/Documents/C++/Scop/libs/stb_image -I/home/user/Documents/C++/Scop/libs/imgui/backends -I/home/user/Documents/C++/Scop/libs/imgui -g -g -Wall -std=gnu++17 -o CMakeFiles/Scop.dir/libs/imgui/imgui_draw.cpp.o -c /home/user/Documents/C++/Scop/libs/imgui/imgui_draw.cpp",
+  "file": "/home/user/Documents/C++/Scop/libs/imgui/imgui_draw.cpp"
+},
+{
+  "directory": "/home/user/Documents/C++/Scop/build",
+  "command": "/bin/g++ -DIMGUI_IMPL_OPENGL_LOADER_GLAD -I/home/user/Documents/C++/Scop/libs/glad/include -I/home/user/Documents/C++/Scop/libs/glfw/include -I/home/user/Documents/C++/Scop/libs/glm -I/home/user/Documents/C++/Scop/libs/stb_image -I/home/user/Documents/C++/Scop/libs/imgui/backends -I/home/user/Documents/C++/Scop/libs/imgui -g -g -Wall -std=gnu++17 -o CMakeFiles/Scop.dir/libs/imgui/imgui.cpp.o -c /home/user/Documents/C++/Scop/libs/imgui/imgui.cpp",
+  "file": "/home/user/Documents/C++/Scop/libs/imgui/imgui.cpp"
+},
+{
+  "directory": "/home/user/Documents/C++/Scop/build",
+  "command": "/bin/g++ -DIMGUI_IMPL_OPENGL_LOADER_GLAD -I/home/user/Documents/C++/Scop/libs/glad/include -I/home/user/Documents/C++/Scop/libs/glfw/include -I/home/user/Documents/C++/Scop/libs/glm -I/home/user/Documents/C++/Scop/libs/stb_image -I/home/user/Documents/C++/Scop/libs/imgui/backends -I/home/user/Documents/C++/Scop/libs/imgui -g -g -Wall -std=gnu++17 -o CMakeFiles/Scop.dir/src/Shader.cpp.o -c /home/user/Documents/C++/Scop/src/Shader.cpp",
+  "file": "/home/user/Documents/C++/Scop/src/Shader.cpp"
+},
+{
+  "directory": "/home/user/Documents/C++/Scop/build",
+  "command": "/bin/g++ -DIMGUI_IMPL_OPENGL_LOADER_GLAD -I/home/user/Documents/C++/Scop/libs/glad/include -I/home/user/Documents/C++/Scop/libs/glfw/include -I/home/user/Documents/C++/Scop/libs/glm -I/home/user/Documents/C++/Scop/libs/stb_image -I/home/user/Documents/C++/Scop/libs/imgui/backends -I/home/user/Documents/C++/Scop/libs/imgui -g -g -Wall -std=gnu++17 -o CMakeFiles/Scop.dir/src/Texture.cpp.o -c /home/user/Documents/C++/Scop/src/Texture.cpp",
+  "file": "/home/user/Documents/C++/Scop/src/Texture.cpp"
+},
+{
+  "directory": "/home/user/Documents/C++/Scop/build",
+  "command": "/bin/g++ -DIMGUI_IMPL_OPENGL_LOADER_GLAD -I/home/user/Documents/C++/Scop/libs/glad/include -I/home/user/Documents/C++/Scop/libs/glfw/include -I/home/user/Documents/C++/Scop/libs/glm -I/home/user/Documents/C++/Scop/libs/stb_image -I/home/user/Documents/C++/Scop/libs/imgui/backends -I/home/user/Documents/C++/Scop/libs/imgui -g -g -Wall -std=gnu++17 -o CMakeFiles/Scop.dir/main.cpp.o -c /home/user/Documents/C++/Scop/main.cpp",
+  "file": "/home/user/Documents/C++/Scop/main.cpp"
+},
+{
+  "directory": "/home/user/Documents/C++/Scop/build/libs",
+  "command": "/bin/gcc -DIMGUI_IMPL_OPENGL_LOADER_GLAD -I/home/user/Documents/C++/Scop/libs/glad/include -g -g -Wall -o CMakeFiles/glad.dir/glad/src/glad.c.o -c /home/user/Documents/C++/Scop/libs/glad/src/glad.c",
+  "file": "/home/user/Documents/C++/Scop/libs/glad/src/glad.c"
+},
+{
+  "directory": "/home/user/Documents/C++/Scop/build/libs/glfw/src",
+  "command": "/bin/gcc -DIMGUI_IMPL_OPENGL_LOADER_GLAD -D_GLFW_USE_CONFIG_H -I/home/user/Documents/C++/Scop/libs/glfw/include -I/home/user/Documents/C++/Scop/libs/glfw/src -I/home/user/Documents/C++/Scop/build/libs/glfw/src -g -fPIC -g -Wall -std=c99 -Wdeclaration-after-statement -o CMakeFiles/glfw.dir/context.c.o -c /home/user/Documents/C++/Scop/libs/glfw/src/context.c",
+  "file": "/home/user/Documents/C++/Scop/libs/glfw/src/context.c"
+},
+{
+  "directory": "/home/user/Documents/C++/Scop/build/libs/glfw/src",
+  "command": "/bin/gcc -DIMGUI_IMPL_OPENGL_LOADER_GLAD -D_GLFW_USE_CONFIG_H -I/home/user/Documents/C++/Scop/libs/glfw/include -I/home/user/Documents/C++/Scop/libs/glfw/src -I/home/user/Documents/C++/Scop/build/libs/glfw/src -g -fPIC -g -Wall -std=c99 -Wdeclaration-after-statement -o CMakeFiles/glfw.dir/init.c.o -c /home/user/Documents/C++/Scop/libs/glfw/src/init.c",
+  "file": "/home/user/Documents/C++/Scop/libs/glfw/src/init.c"
+},
+{
+  "directory": "/home/user/Documents/C++/Scop/build/libs/glfw/src",
+  "command": "/bin/gcc -DIMGUI_IMPL_OPENGL_LOADER_GLAD -D_GLFW_USE_CONFIG_H -I/home/user/Documents/C++/Scop/libs/glfw/include -I/home/user/Documents/C++/Scop/libs/glfw/src -I/home/user/Documents/C++/Scop/build/libs/glfw/src -g -fPIC -g -Wall -std=c99 -Wdeclaration-after-statement -o CMakeFiles/glfw.dir/input.c.o -c /home/user/Documents/C++/Scop/libs/glfw/src/input.c",
+  "file": "/home/user/Documents/C++/Scop/libs/glfw/src/input.c"
+},
+{
+  "directory": "/home/user/Documents/C++/Scop/build/libs/glfw/src",
+  "command": "/bin/gcc -DIMGUI_IMPL_OPENGL_LOADER_GLAD -D_GLFW_USE_CONFIG_H -I/home/user/Documents/C++/Scop/libs/glfw/include -I/home/user/Documents/C++/Scop/libs/glfw/src -I/home/user/Documents/C++/Scop/build/libs/glfw/src -g -fPIC -g -Wall -std=c99 -Wdeclaration-after-statement -o CMakeFiles/glfw.dir/monitor.c.o -c /home/user/Documents/C++/Scop/libs/glfw/src/monitor.c",
+  "file": "/home/user/Documents/C++/Scop/libs/glfw/src/monitor.c"
+},
+{
+  "directory": "/home/user/Documents/C++/Scop/build/libs/glfw/src",
+  "command": "/bin/gcc -DIMGUI_IMPL_OPENGL_LOADER_GLAD -D_GLFW_USE_CONFIG_H -I/home/user/Documents/C++/Scop/libs/glfw/include -I/home/user/Documents/C++/Scop/libs/glfw/src -I/home/user/Documents/C++/Scop/build/libs/glfw/src -g -fPIC -g -Wall -std=c99 -Wdeclaration-after-statement -o CMakeFiles/glfw.dir/vulkan.c.o -c /home/user/Documents/C++/Scop/libs/glfw/src/vulkan.c",
+  "file": "/home/user/Documents/C++/Scop/libs/glfw/src/vulkan.c"
+},
+{
+  "directory": "/home/user/Documents/C++/Scop/build/libs/glfw/src",
+  "command": "/bin/gcc -DIMGUI_IMPL_OPENGL_LOADER_GLAD -D_GLFW_USE_CONFIG_H -I/home/user/Documents/C++/Scop/libs/glfw/include -I/home/user/Documents/C++/Scop/libs/glfw/src -I/home/user/Documents/C++/Scop/build/libs/glfw/src -g -fPIC -g -Wall -std=c99 -Wdeclaration-after-statement -o CMakeFiles/glfw.dir/window.c.o -c /home/user/Documents/C++/Scop/libs/glfw/src/window.c",
+  "file": "/home/user/Documents/C++/Scop/libs/glfw/src/window.c"
+},
+{
+  "directory": "/home/user/Documents/C++/Scop/build/libs/glfw/src",
+  "command": "/bin/gcc -DIMGUI_IMPL_OPENGL_LOADER_GLAD -D_GLFW_USE_CONFIG_H -I/home/user/Documents/C++/Scop/libs/glfw/include -I/home/user/Documents/C++/Scop/libs/glfw/src -I/home/user/Documents/C++/Scop/build/libs/glfw/src -g -fPIC -g -Wall -std=c99 -o CMakeFiles/glfw.dir/x11_init.c.o -c /home/user/Documents/C++/Scop/libs/glfw/src/x11_init.c",
+  "file": "/home/user/Documents/C++/Scop/libs/glfw/src/x11_init.c"
+},
+{
+  "directory": "/home/user/Documents/C++/Scop/build/libs/glfw/src",
+  "command": "/bin/gcc -DIMGUI_IMPL_OPENGL_LOADER_GLAD -D_GLFW_USE_CONFIG_H -I/home/user/Documents/C++/Scop/libs/glfw/include -I/home/user/Documents/C++/Scop/libs/glfw/src -I/home/user/Documents/C++/Scop/build/libs/glfw/src -g -fPIC -g -Wall -std=c99 -o CMakeFiles/glfw.dir/x11_monitor.c.o -c /home/user/Documents/C++/Scop/libs/glfw/src/x11_monitor.c",
+  "file": "/home/user/Documents/C++/Scop/libs/glfw/src/x11_monitor.c"
+},
+{
+  "directory": "/home/user/Documents/C++/Scop/build/libs/glfw/src",
+  "command": "/bin/gcc -DIMGUI_IMPL_OPENGL_LOADER_GLAD -D_GLFW_USE_CONFIG_H -I/home/user/Documents/C++/Scop/libs/glfw/include -I/home/user/Documents/C++/Scop/libs/glfw/src -I/home/user/Documents/C++/Scop/build/libs/glfw/src -g -fPIC -g -Wall -std=c99 -o CMakeFiles/glfw.dir/x11_window.c.o -c /home/user/Documents/C++/Scop/libs/glfw/src/x11_window.c",
+  "file": "/home/user/Documents/C++/Scop/libs/glfw/src/x11_window.c"
+},
+{
+  "directory": "/home/user/Documents/C++/Scop/build/libs/glfw/src",
+  "command": "/bin/gcc -DIMGUI_IMPL_OPENGL_LOADER_GLAD -D_GLFW_USE_CONFIG_H -I/home/user/Documents/C++/Scop/libs/glfw/include -I/home/user/Documents/C++/Scop/libs/glfw/src -I/home/user/Documents/C++/Scop/build/libs/glfw/src -g -fPIC -g -Wall -std=c99 -o CMakeFiles/glfw.dir/xkb_unicode.c.o -c /home/user/Documents/C++/Scop/libs/glfw/src/xkb_unicode.c",
+  "file": "/home/user/Documents/C++/Scop/libs/glfw/src/xkb_unicode.c"
+},
+{
+  "directory": "/home/user/Documents/C++/Scop/build/libs/glfw/src",
+  "command": "/bin/gcc -DIMGUI_IMPL_OPENGL_LOADER_GLAD -D_GLFW_USE_CONFIG_H -I/home/user/Documents/C++/Scop/libs/glfw/include -I/home/user/Documents/C++/Scop/libs/glfw/src -I/home/user/Documents/C++/Scop/build/libs/glfw/src -g -fPIC -g -Wall -std=c99 -o CMakeFiles/glfw.dir/posix_time.c.o -c /home/user/Documents/C++/Scop/libs/glfw/src/posix_time.c",
+  "file": "/home/user/Documents/C++/Scop/libs/glfw/src/posix_time.c"
+},
+{
+  "directory": "/home/user/Documents/C++/Scop/build/libs/glfw/src",
+  "command": "/bin/gcc -DIMGUI_IMPL_OPENGL_LOADER_GLAD -D_GLFW_USE_CONFIG_H -I/home/user/Documents/C++/Scop/libs/glfw/include -I/home/user/Documents/C++/Scop/libs/glfw/src -I/home/user/Documents/C++/Scop/build/libs/glfw/src -g -fPIC -g -Wall -std=c99 -o CMakeFiles/glfw.dir/posix_thread.c.o -c /home/user/Documents/C++/Scop/libs/glfw/src/posix_thread.c",
+  "file": "/home/user/Documents/C++/Scop/libs/glfw/src/posix_thread.c"
+},
+{
+  "directory": "/home/user/Documents/C++/Scop/build/libs/glfw/src",
+  "command": "/bin/gcc -DIMGUI_IMPL_OPENGL_LOADER_GLAD -D_GLFW_USE_CONFIG_H -I/home/user/Documents/C++/Scop/libs/glfw/include -I/home/user/Documents/C++/Scop/libs/glfw/src -I/home/user/Documents/C++/Scop/build/libs/glfw/src -g -fPIC -g -Wall -std=c99 -o CMakeFiles/glfw.dir/glx_context.c.o -c /home/user/Documents/C++/Scop/libs/glfw/src/glx_context.c",
+  "file": "/home/user/Documents/C++/Scop/libs/glfw/src/glx_context.c"
+},
+{
+  "directory": "/home/user/Documents/C++/Scop/build/libs/glfw/src",
+  "command": "/bin/gcc -DIMGUI_IMPL_OPENGL_LOADER_GLAD -D_GLFW_USE_CONFIG_H -I/home/user/Documents/C++/Scop/libs/glfw/include -I/home/user/Documents/C++/Scop/libs/glfw/src -I/home/user/Documents/C++/Scop/build/libs/glfw/src -g -fPIC -g -Wall -std=c99 -Wdeclaration-after-statement -o CMakeFiles/glfw.dir/egl_context.c.o -c /home/user/Documents/C++/Scop/libs/glfw/src/egl_context.c",
+  "file": "/home/user/Documents/C++/Scop/libs/glfw/src/egl_context.c"
+},
+{
+  "directory": "/home/user/Documents/C++/Scop/build/libs/glfw/src",
+  "command": "/bin/gcc -DIMGUI_IMPL_OPENGL_LOADER_GLAD -D_GLFW_USE_CONFIG_H -I/home/user/Documents/C++/Scop/libs/glfw/include -I/home/user/Documents/C++/Scop/libs/glfw/src -I/home/user/Documents/C++/Scop/build/libs/glfw/src -g -fPIC -g -Wall -std=c99 -Wdeclaration-after-statement -o CMakeFiles/glfw.dir/osmesa_context.c.o -c /home/user/Documents/C++/Scop/libs/glfw/src/osmesa_context.c",
+  "file": "/home/user/Documents/C++/Scop/libs/glfw/src/osmesa_context.c"
+},
+{
+  "directory": "/home/user/Documents/C++/Scop/build/libs/glfw/src",
+  "command": "/bin/gcc -DIMGUI_IMPL_OPENGL_LOADER_GLAD -D_GLFW_USE_CONFIG_H -I/home/user/Documents/C++/Scop/libs/glfw/include -I/home/user/Documents/C++/Scop/libs/glfw/src -I/home/user/Documents/C++/Scop/build/libs/glfw/src -g -fPIC -g -Wall -std=c99 -o CMakeFiles/glfw.dir/linux_joystick.c.o -c /home/user/Documents/C++/Scop/libs/glfw/src/linux_joystick.c",
+  "file": "/home/user/Documents/C++/Scop/libs/glfw/src/linux_joystick.c"
+},
+{
+  "directory": "/home/user/Documents/C++/Scop/build/libs/imgui",
+  "command": "/bin/g++ -DIMGUI_IMPL_OPENGL_LOADER_GLAD -I/home/user/Documents/C++/Scop/libs/glad/include -I/home/user/Documents/C++/Scop/libs/glfw/include -g   -ldl -g -Wall -std=gnu++17 -o CMakeFiles/imgui.dir/imgui.cpp.o -c /home/user/Documents/C++/Scop/libs/imgui/imgui.cpp",
+  "file": "/home/user/Documents/C++/Scop/libs/imgui/imgui.cpp"
+},
+{
+  "directory": "/home/user/Documents/C++/Scop/build/libs/imgui",
+  "command": "/bin/g++ -DIMGUI_IMPL_OPENGL_LOADER_GLAD -I/home/user/Documents/C++/Scop/libs/glad/include -I/home/user/Documents/C++/Scop/libs/glfw/include -g   -ldl -g -Wall -std=gnu++17 -o CMakeFiles/imgui.dir/imgui_demo.cpp.o -c /home/user/Documents/C++/Scop/libs/imgui/imgui_demo.cpp",
+  "file": "/home/user/Documents/C++/Scop/libs/imgui/imgui_demo.cpp"
+},
+{
+  "directory": "/home/user/Documents/C++/Scop/build/libs/imgui",
+  "command": "/bin/g++ -DIMGUI_IMPL_OPENGL_LOADER_GLAD -I/home/user/Documents/C++/Scop/libs/glad/include -I/home/user/Documents/C++/Scop/libs/glfw/include -g   -ldl -g -Wall -std=gnu++17 -o CMakeFiles/imgui.dir/imgui_draw.cpp.o -c /home/user/Documents/C++/Scop/libs/imgui/imgui_draw.cpp",
+  "file": "/home/user/Documents/C++/Scop/libs/imgui/imgui_draw.cpp"
+},
+{
+  "directory": "/home/user/Documents/C++/Scop/build/libs/imgui",
+  "command": "/bin/g++ -DIMGUI_IMPL_OPENGL_LOADER_GLAD -I/home/user/Documents/C++/Scop/libs/glad/include -I/home/user/Documents/C++/Scop/libs/glfw/include -g   -ldl -g -Wall -std=gnu++17 -o CMakeFiles/imgui.dir/imgui_impl_glfw.cpp.o -c /home/user/Documents/C++/Scop/libs/imgui/imgui_impl_glfw.cpp",
+  "file": "/home/user/Documents/C++/Scop/libs/imgui/imgui_impl_glfw.cpp"
+},
+{
+  "directory": "/home/user/Documents/C++/Scop/build/libs/imgui",
+  "command": "/bin/g++ -DIMGUI_IMPL_OPENGL_LOADER_GLAD -I/home/user/Documents/C++/Scop/libs/glad/include -I/home/user/Documents/C++/Scop/libs/glfw/include -g   -ldl -g -Wall -std=gnu++17 -o CMakeFiles/imgui.dir/imgui_impl_opengl3.cpp.o -c /home/user/Documents/C++/Scop/libs/imgui/imgui_impl_opengl3.cpp",
+  "file": "/home/user/Documents/C++/Scop/libs/imgui/imgui_impl_opengl3.cpp"
+},
+{
+  "directory": "/home/user/Documents/C++/Scop/build/libs/imgui",
+  "command": "/bin/g++ -DIMGUI_IMPL_OPENGL_LOADER_GLAD -I/home/user/Documents/C++/Scop/libs/glad/include -I/home/user/Documents/C++/Scop/libs/glfw/include -g   -ldl -g -Wall -std=gnu++17 -o CMakeFiles/imgui.dir/imgui_widgets.cpp.o -c /home/user/Documents/C++/Scop/libs/imgui/imgui_widgets.cpp",
+  "file": "/home/user/Documents/C++/Scop/libs/imgui/imgui_widgets.cpp"
+}
+]

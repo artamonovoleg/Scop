@@ -6,9 +6,9 @@ file(REMOVE_RECURSE
   "CMakeFiles/Scop.dir/libs/imgui/imgui_impl_opengl3.cpp.o"
   "CMakeFiles/Scop.dir/libs/imgui/imgui_widgets.cpp.o"
   "CMakeFiles/Scop.dir/libs/stb_image/stb_image.cpp.o"
-  "CMakeFiles/Scop.dir/main.cpp.o"
   "CMakeFiles/Scop.dir/src/Shader.cpp.o"
   "CMakeFiles/Scop.dir/src/Texture.cpp.o"
+  "CMakeFiles/Scop.dir/src/main.cpp.o"
   "Scop"
   "Scop.pdb"
 )
