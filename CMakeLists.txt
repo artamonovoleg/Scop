@@ -17,28 +17,31 @@ set(GLFW_BUILD_EXAMPLES OFF CACHE BOOL "" FORCE)
 
 add_definitions(-DIMGUI_IMPL_OPENGL_LOADER_GLAD)
 
-set(GLM_INCLUDE_DIR libs/glm)
-set(GLFW_INCLUDE_DIR libs/glfw/include)
-set(IMGUI_INCLUDE_DIR libs/imgui)
-set(GLAD_INCLUDE_DIR libs/glad/include)
-set(STB_IMAGE_DIR libs/stb_image)
+# set(GLM_INCLUDE_DIR     libs/glm)
+# set(GLFW_INCLUDE_DIR    libs/glfw/include)
+# set(IMGUI_INCLUDE_DIR   libs/imgui)
+# set(GLAD_INCLUDE_DIR    libs/glad/include)
+# set(STB_IMAGE_DIR       libs/stb_image)
 
-add_subdirectory(libs)
+# add_subdirectory(libs)
 
-set(INCLUDES    libs/glad/include
-                libs/glfw/include
-                libs/glm
-                libs/stb_image
-                libs/imgui/backends
-                libs/imgui)
+set(INCLUDES    third_party/glad/include
+                third_party/glfw/include
+                third_party/glm
+                third_party/stb_image
+                third_party/imgui/backends
+                third_party/imgui)
 
-set(SRCS    libs/glad/src/glad.c
-            libs/stb_image/stb_image.cpp
-            libs/imgui/imgui_impl_glfw.cpp
-            libs/imgui/imgui_impl_opengl3.cpp
-            libs/imgui/imgui_widgets.cpp
-            libs/imgui/imgui_draw.cpp
-            libs/imgui/imgui.cpp
+set(SRCS    third_party/glad/src/glad.c
+            third_party/stb_image/stb_image.cpp
+            third_party/imgui/backends/imgui_impl_glfw.cpp
+            third_party/imgui/backends/imgui_impl_opengl3.cpp
+            third_party/imgui/imgui_widgets.cpp
+            third_party/imgui/imgui_draw.cpp
+            third_party/imgui/imgui_tables.cpp
+            third_party/imgui/imgui_demo.cpp
+            third_party/imgui/imgui.cpp
+
             src/Shader.cpp
             src/Texture.cpp
             src/main.cpp)
