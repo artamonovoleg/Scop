@@ -5,8 +5,8 @@
 #include "Shader.hpp"
 #include "Texture.hpp"
 #include "Mesh.hpp"
-#include "OBJLoader.hpp"
 #include "Camera.hpp"
+#include "Model.hpp"
 
 #include "imgui.h"
 #include "imgui_impl_glfw.h"
@@ -26,81 +26,6 @@ glm::vec3 cameraUp    = glm::vec3(0.0f, 1.0f, 0.0f);
 // GL 3.0 + GLSL 130
 const char* glsl_version = "#version 130";
 
-
-class VertexArray
-{
-    private:
-        unsigned int m_ID;
-    public:
-        VertexArray()
-        {
-            glGenVertexArrays(1, &m_ID);
-            glBindVertexArray(m_ID);
-        }
-
-        ~VertexArray()
-        {
-            glDeleteVertexArrays(1, &m_ID);
-        }
-
-        void Bind() const
-        {
-            glBindVertexArray(m_ID);
-        }
-
-        void Unbind() const
-        {
-            glBindVertexArray(0);
-        }
-
-};
-
-template <typename T>
-class VertexBuffer
-{
-    private:
-        unsigned int m_ID;
-        const T* m_Data;
-        const size_t m_Size;
-    public:
-        VertexBuffer(const T* data, size_t size)
-            : m_Data(data), m_Size(size)
-        {
-            glGenBuffers(1, &m_ID);
-            glBindBuffer(GL_ARRAY_BUFFER, m_ID);
-            glBufferData(GL_ARRAY_BUFFER, m_Size * sizeof(T), m_Data, GL_STATIC_DRAW);
-        }
-
-        void Bind() const
-        {
-            glBindBuffer(GL_ARRAY_BUFFER, m_ID);
-            glBufferData(GL_ARRAY_BUFFER, m_Size * sizeof(T), m_Data, GL_STATIC_DRAW);
-        }
-
-        void Unbind() const
-        {
-            glBindBuffer(GL_ARRAY_BUFFER, 0);
-        }
-};
-
-
-class VertexBuffersLayout
-{
-    private:
-        mutable int m_Count = 0;
-    public:
-        VertexBuffersLayout() = default;
-        ~VertexBuffersLayout() = default;
-
-        template<typename T>
-        void Push(unsigned int amount, unsigned int stride, unsigned int offset) const
-        {
-            glVertexAttribPointer(m_Count, amount, GL_FLOAT, GL_FALSE, stride * sizeof(T), (void *)(offset * sizeof(T)));
-            glEnableVertexAttribArray(m_Count);
-            m_Count++;
-        }
-};
-
 ImGuiIO* imgio = nullptr;
 
 void framebuffer_size_callback(GLFWwindow* window, int width, int height);
@@ -108,8 +33,8 @@ void mouse_callback(GLFWwindow* window, double xpos, double ypos);
 void scroll_callback(GLFWwindow* window, double xoffset, double yoffset);
 
 // settings
-const unsigned int SCR_WIDTH = 1000;
-const unsigned int SCR_HEIGHT = 800;
+const unsigned int SCR_WIDTH = 1920;
+const unsigned int SCR_HEIGHT = 1080;
 
 // camera
 float lastX = SCR_WIDTH / 2.0f;
@@ -125,11 +50,19 @@ glm::vec3 lightPos(1.2f, 1.0f, 2.0f);
 
 int main()
 {
+    // glfw: initialize and configure
+    // ------------------------------
     glfwInit();
     glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 3);
     glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 3);
     glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);
 
+#ifdef __APPLE__
+    glfwWindowHint(GLFW_OPENGL_FORWARD_COMPAT, GL_TRUE);
+#endif
+
+    // glfw window creation
+    // --------------------
     GLFWwindow* window = glfwCreateWindow(SCR_WIDTH, SCR_HEIGHT, "LearnOpenGL", NULL, NULL);
     if (window == NULL)
     {
@@ -141,6 +74,17 @@ int main()
     glfwSetCursorPosCallback(window, mouse_callback);
     glfwSetScrollCallback(window, scroll_callback);
     glfwSetFramebufferSizeCallback(window, framebuffer_size_callback);
+
+    // tell GLFW to capture our mouse
+   glfwSetInputMode(window, GLFW_CURSOR, GLFW_CURSOR_DISABLED);
+
+    // glad: load all OpenGL function pointers
+    // ---------------------------------------
+    if (!gladLoadGLLoader((GLADloadproc)glfwGetProcAddress))
+    {
+        std::cout << "Failed to initialize GLAD" << std::endl;
+        return -1;
+    }
 
 //------------------------------------------ImGUI---------------------------------------------------------------------//
     ImGui::CreateContext();
@@ -206,28 +150,32 @@ int main()
             -0.5f,  0.5f, -0.5f,  0.0f,  1.0f,  0.0f,  0.0f,  1.0f
     };
 
-    OBJLoader objLoader;
-    Mesh m = objLoader.LoadFromFile("../res/objs/diablo.obj");
+    Model m("../res/objs/backpack/backpack.obj");
+    // m.LoadFromFile("../res/objs/backpack/backpack.obj");
     // first, configure the cube's VAO (and VBO)
     unsigned int VBO, cubeVAO;
     glGenVertexArrays(1, &cubeVAO);
     glGenBuffers(1, &VBO);
 
     glBindBuffer(GL_ARRAY_BUFFER, VBO);
-    glBufferData(GL_ARRAY_BUFFER, m.m_Vertices.size() * sizeof(Vertex), m.m_Vertices.data(), GL_STATIC_DRAW);
+    // glBufferData(GL_ARRAY_BUFFER, m.vertices.size() * sizeof(Vertex), m.vertices.data(), GL_STATIC_DRAW);
 
     glBindVertexArray(cubeVAO);
-    glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 8 * sizeof(float), (void*)0);
-    glEnableVertexAttribArray(0);
-    glVertexAttribPointer(1, 2, GL_FLOAT, GL_FALSE, 8 * sizeof(float), (void*)(3 * sizeof(float)));
-    glEnableVertexAttribArray(1);
-    glVertexAttribPointer(2, 3, GL_FLOAT, GL_FALSE, 8 * sizeof(float), (void*)(5 * sizeof(float)));
-    glEnableVertexAttribArray(2);
+
+    // vertex positions
+    glEnableVertexAttribArray(0);	
+    glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, sizeof(Vertex), (void*)0);
+    // vertex normals
+    glEnableVertexAttribArray(1);	
+    glVertexAttribPointer(1, 3, GL_FLOAT, GL_FALSE, sizeof(Vertex), (void*)offsetof(Vertex, normal));
+    // vertex texture coords
+    glEnableVertexAttribArray(2);	
+    glVertexAttribPointer(2, 2, GL_FLOAT, GL_FALSE, sizeof(Vertex), (void*)offsetof(Vertex, texCoord));
 
     unsigned int ebo;
     glGenBuffers(1, &ebo);
     glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, ebo);
-    glBufferData(GL_ELEMENT_ARRAY_BUFFER, m.m_Indices.size() * sizeof(unsigned int), m.m_Indices.data(), GL_STATIC_DRAW);
+    // glBufferData(GL_ELEMENT_ARRAY_BUFFER, m.indices.size() * sizeof(unsigned int), m.indices.data(), GL_STATIC_DRAW);
 
     // second, configure the light's VAO (VBO stays the same; the vertices are the same for the light object which is also a 3D cube)
     unsigned int lightCubeVAO, lightVBO;
@@ -245,7 +193,7 @@ int main()
     // load textures (we now use a utility function to keep the code more organized)
     // -----------------------------------------------------------------------------
 
-    Texture texture ("../res/textures/diablo3_pose_diffuse.tga");
+    Texture texture ("../res/objs/backpack/diffuse.jpg");
     glm::vec3 ambientLight(0.2f, 0.2f, 0.2f);
     glm::vec3 diffuseLight(1.0f, 0.5f, 0.5f);
 
@@ -301,7 +249,7 @@ int main()
 
         // render the cube
         glBindVertexArray(cubeVAO);
-        glDrawElements(GL_TRIANGLES, m.m_Indices.size(), GL_UNSIGNED_INT, nullptr);
+        // glDrawElements(GL_TRIANGLES, m.indices.size(), GL_UNSIGNED_INT, nullptr);
 
         // also draw the lamp object
         lightCubeShader.Bind();
@@ -314,6 +262,8 @@ int main()
 
         glBindVertexArray(lightCubeVAO);
         glDrawArrays(GL_TRIANGLES, 0, 36);
+
+        m.Draw(lightingShader, texture);
 
         ImGui_ImplOpenGL3_NewFrame();
         ImGui_ImplGlfw_NewFrame();

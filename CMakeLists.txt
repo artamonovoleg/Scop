@@ -8,7 +8,6 @@ project(${PROJECT_NAME})
 add_compile_options(
         -g
         -Wall
-#        -Wextra
 )
 
 set(GLFW_BUILD_DOCS OFF CACHE BOOL "" FORCE)
@@ -16,14 +15,6 @@ set(GLFW_BUILD_TESTS OFF CACHE BOOL "" FORCE)
 set(GLFW_BUILD_EXAMPLES OFF CACHE BOOL "" FORCE)
 
 add_definitions(-DIMGUI_IMPL_OPENGL_LOADER_GLAD)
-
-# set(GLM_INCLUDE_DIR     libs/glm)
-# set(GLFW_INCLUDE_DIR    libs/glfw/include)
-# set(IMGUI_INCLUDE_DIR   libs/imgui)
-# set(GLAD_INCLUDE_DIR    libs/glad/include)
-# set(STB_IMAGE_DIR       libs/stb_image)
-
-# add_subdirectory(libs)
 
 set(INCLUDES    third_party/glad/include
                 third_party/glfw/include
@@ -44,6 +35,8 @@ set(SRCS    third_party/glad/src/glad.c
 
             src/Shader.cpp
             src/Texture.cpp
+            src/Mesh.cpp
+            src/Model.cpp
             src/main.cpp)
 
 include_directories(${INCLUDES})
@@ -70,5 +63,5 @@ elseif(APPLE)
 elseif(UNIX AND NOT APPLE)
     target_link_libraries(${PROJECT_NAME}
             glfw
-            GL X11 pthread dl)
+            GL X11 pthread dl tinyobjloader)
 endif()
