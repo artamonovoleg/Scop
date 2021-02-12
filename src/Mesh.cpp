@@ -35,11 +35,9 @@ void Mesh::SetupMesh()
     glBindVertexArray(0);
 }
 
-void Mesh::Draw(Shader& shader)
+void Mesh::Draw()
 {
-    shader.Bind();
     glBindVertexArray(m_VAO);
     glDrawElements(GL_TRIANGLES, m_Indices.size(), GL_UNSIGNED_INT, 0);
     glBindVertexArray(0);
-    shader.Unbind();
 }

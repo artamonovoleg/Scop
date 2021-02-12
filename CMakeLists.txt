@@ -37,6 +37,7 @@ set(SRCS    third_party/glad/src/glad.c
             src/Texture.cpp
             src/Mesh.cpp
             src/Model.cpp
+            src/App.cpp
             src/main.cpp)
 
 include_directories(${INCLUDES})

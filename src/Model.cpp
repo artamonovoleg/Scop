@@ -6,7 +6,7 @@
 #include "Shader.hpp"
 #include "Texture.hpp"
 
-Model::Model(const std::string& path)
+Model::Model(const std::string& modelPath, const std::string& texturePath)
 {
     tinyobj::attrib_t attrib;
     std::vector<tinyobj::shape_t> shapes;
@@ -16,7 +16,7 @@ Model::Model(const std::string& path)
     std::vector<Vertex>         vertices;
     std::vector<unsigned int>   indices;
 
-    if (!tinyobj::LoadObj(&attrib, &shapes, &materials, &warn, &err, path.c_str())) 
+    if (!tinyobj::LoadObj(&attrib, &shapes, &materials, &warn, &err, modelPath.c_str())) 
         throw std::runtime_error(warn + err);
 
 
@@ -62,11 +62,20 @@ Model::Model(const std::string& path)
         m_Meshes.emplace_back(Mesh(vertices, indices));
     }
 
+    if (!texturePath.empty())
+        m_Texture = std::make_shared<Texture>(texturePath);
 }
 
-void Model::Draw(Shader& shader, Texture& texture)
+void Model::Draw(Shader& shader)
 {
-    texture.Bind();
+    if (m_Texture != nullptr)
+        m_Texture->Bind();
+  
+    shader.Bind();
     for (auto& mesh : m_Meshes)
-        mesh.Draw(shader);
+        mesh.Draw();
+    shader.Unbind();
+   
+    if (m_Texture != nullptr)
+        m_Texture->Unbind();
 }

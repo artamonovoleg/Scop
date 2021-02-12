@@ -4,6 +4,7 @@
 
 #include "Texture.hpp"
 
+#include <stdexcept>
 #include <glad/glad.h>
 #include "stb_image.h"
 
@@ -12,6 +13,9 @@ Texture::Texture(const std::string &path)
 {
     stbi_set_flip_vertically_on_load(1);
     _localBuffer = stbi_load(path.c_str(), &_width, &_height, &_BPP, 4);
+
+    if (!_localBuffer)
+        throw std::runtime_error("Failed to open texture: " + _filePath);
 
     glGenTextures(1, &_rendererID);
     glBindTexture(GL_TEXTURE_2D, _rendererID);

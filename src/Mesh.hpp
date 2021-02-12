@@ -17,9 +17,6 @@ class Mesh
 
         void SetupMesh();
     public:
-
-        Mesh() = default;
         Mesh(std::vector<Vertex> vertices, std::vector<unsigned int> indices);
-
-        void Draw(Shader& shader);
+        void Draw();
 };
